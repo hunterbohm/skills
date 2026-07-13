@@ -11,6 +11,17 @@ import sys
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
 SKILLS_ROOT = REPO_ROOT / "skills"
+ALLOWED_REPO_ROOT = {
+    ".git",
+    ".github",
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "docs",
+    "package.json",
+    "scripts",
+    "skills",
+}
 ALLOWED_TOP_LEVEL = {
     "SKILL.md",
     "LICENSE",
@@ -144,10 +155,33 @@ def discover_skills() -> list[pathlib.Path]:
 
 def main() -> None:
     check = Validation()
+    unexpected_root = sorted(
+        path.name for path in REPO_ROOT.iterdir() if path.name not in ALLOWED_REPO_ROOT
+    )
+    check.require(
+        not unexpected_root,
+        f"unexpected repository-root entries: {unexpected_root}",
+    )
+
     skills = discover_skills()
     check.require(bool(skills), "no exported skills found")
+    names: dict[str, pathlib.Path] = {}
     for skill in skills:
+        relative = skill.relative_to(SKILLS_ROOT)
+        check.require(
+            len(relative.parts) == 2,
+            f"{relative}: skill must live at skills/<category>/<name>",
+        )
         validate_skill(skill, check)
+        values = parse_frontmatter(skill / "SKILL.md", check)
+        name = values.get("name")
+        if name in names:
+            check.require(
+                False,
+                f"duplicate skill name {name}: {names[name]} and {skill}",
+            )
+        elif name:
+            names[name] = skill
     if check.errors:
         for error in check.errors:
             print(f"ERROR: {error}", file=sys.stderr)
