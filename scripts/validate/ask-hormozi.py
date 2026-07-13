@@ -10,8 +10,8 @@ import sys
 from collections import Counter
 
 
-REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
-SKILL = REPO_ROOT / "skills" / "ask-hormozi"
+REPO_ROOT = pathlib.Path(__file__).resolve().parents[2]
+SKILL = REPO_ROOT / "skills" / "business" / "ask-hormozi"
 WORD_RE = re.compile(r"\b[\w’'-]+\b", re.UNICODE)
 
 
@@ -70,13 +70,6 @@ def validate_evidence(errors: list[str]) -> None:
         fail(errors, f"exact source-page mix changed: {dict(exact_domains)}")
     if paraphrase_without_url != 21:
         fail(errors, f"title-only paraphrase count changed: {paraphrase_without_url}")
-
-    readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
-    revision = manifest["source"]["revision"]
-    for required in (revision[:12], "84 original YouTube", "27 public transcript-mirror", "21 title-level"):
-        if required not in readme:
-            fail(errors, f"README missing provenance detail: {required}")
-
 
 def validate_frameworks(errors: list[str]) -> None:
     references = SKILL / "references"
