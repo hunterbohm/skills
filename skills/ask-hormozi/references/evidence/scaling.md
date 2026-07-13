@@ -1,6 +1,6 @@
 <!-- GENERATED — do not hand-edit.
      Source: hunterbohm/hormozi-glossary glossary.yml
-     Revision: a012cfeb18b81e3faa54cf78db0b5d5c645b7114 (2026-07-10)
+     Revision: b385873d66c75e31d6625cb49e217d0231f1169c (2026-07-13)
      Exact excerpts are normalized contiguous transcript matches, capped at 20 words.
      Other entries are explicitly paraphrase-only or citation-only. -->
 

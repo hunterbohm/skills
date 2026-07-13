@@ -39,7 +39,7 @@ The current release ships 243 evidence entries:
 - 112 paraphrase-only entries: 91 with public links and 21 title-level episode citations
 - 20 book or source citations with no invented quotation
 
-The evidence snapshot is generated from [`hunterbohm/hormozi-glossary`](https://github.com/hunterbohm/hormozi-glossary) at revision [`a012cfeb18b8`](https://github.com/hunterbohm/hormozi-glossary/commit/a012cfeb18b81e3faa54cf78db0b5d5c645b7114). Framework guides are compact paraphrased operating guides; only the evidence layer may supply quotations. The glossary is the upstream research corpus, not a runtime dependency.
+The evidence snapshot is generated from [`hunterbohm/hormozi-glossary`](https://github.com/hunterbohm/hormozi-glossary) at revision [`b385873d66c7`](https://github.com/hunterbohm/hormozi-glossary/commit/b385873d66c75e31d6625cb49e217d0231f1169c). Framework guides are compact paraphrased operating guides; only the evidence layer may supply quotations. The glossary is the upstream research corpus, not a runtime dependency.
 
 Live research is optional and tool-agnostic. When the installed agent has public search or transcript access, the skill can verify current claims against primary sources. Without those capabilities, it says the live check could not run and stays inside the shipped snapshot.
 
