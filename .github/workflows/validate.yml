@@ -19,8 +19,20 @@ jobs:
       - name: Validate release payload
         run: |
           python3 scripts/validate.py
-          python3 scripts/validate-ask-hormozi.py
-      - name: Verify Agent Skills discovery
+          python3 scripts/validate/ask-hormozi.py
+          python3 scripts/generate-catalog.py --check
+      - name: Verify pinned Agent Skills discovery
         env:
           DO_NOT_TRACK: "1"
         run: npx -y skills@1.5.15 add . --list
+      - name: Verify current Agent Skills discovery
+        env:
+          DO_NOT_TRACK: "1"
+        run: npx -y skills@latest add . --list
+      - name: Verify Codex-only targeting
+        env:
+          DO_NOT_TRACK: "1"
+        run: |
+          test_home="$(mktemp -d)"
+          HOME="$test_home" npx -y skills@latest add . --skill project-control --agent codex --global -y
+          find "$test_home" -path '*/project-control/SKILL.md' -print -quit | grep -q .
