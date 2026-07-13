@@ -2,17 +2,7 @@
 
 I kept re-explaining the same specialist workflows to every agent.
 
-This repo is where I'm packaging the good ones so you can install them in one command.
-
-The first is Ask Hormozi. I love Hormozi's advice. I hated how generic it became when I asked an AI to apply it.
-
-## Install Ask Hormozi
-
-Install one skill globally with the open-source `skills` CLI:
-
-```bash
-npx skills@latest add hunterbohm/skills --skill ask-hormozi --global
-```
+This repo is where I'm packaging the good ones so you can install them in one command. Some are portable across Agent Skills-compatible clients; others are built for a specific host and say so clearly.
 
 Preview what the repo exposes before installing:
 
@@ -20,7 +10,41 @@ Preview what the repo exposes before installing:
 npx skills@latest add hunterbohm/skills --list
 ```
 
-## Ask Hormozi
+## Codex App skills
+
+### Project Control
+
+**Compatibility: Codex App only.** This release relies on Codex inline visualizations, its model-invoked `visualize` skill, and `window.openai.sendFollowUpMessage`. Other agent harnesses are not supported yet.
+
+Install it globally:
+
+```bash
+npx skills@latest add hunterbohm/skills --skill project-control --global
+```
+
+`project-control` reads the active project's real sources and builds the smallest useful interactive view for the situation. It might produce a dependency map, timeline, evidence ledger, decision map, workflow, readiness view, scenario lab, or a project-specific visual that fits better.
+
+It keeps the process predictable without forcing every project into the same schema. The project's own vocabulary and evidence determine what appears.
+
+Try it in a Codex App task opened inside a project:
+
+```text
+Use $project-control to get me on top of this project.
+```
+
+You can also ask it to show what is blocked, assess release readiness, explore a named tradeoff, or refresh the view from current sources.
+
+## Cross-runtime skills
+
+### Ask Hormozi
+
+I love Hormozi's advice. I hated how generic it became when I asked an AI to apply it.
+
+Install it globally with the open-source `skills` CLI:
+
+```bash
+npx skills@latest add hunterbohm/skills --skill ask-hormozi --global
+```
 
 `ask-hormozi` is an unofficial business advisor built from Alex Hormozi's published frameworks.
 
@@ -43,7 +67,7 @@ The evidence snapshot is generated from [`hunterbohm/hormozi-glossary`](https://
 
 Live research is optional and tool-agnostic. When the installed agent has public search or transcript access, the skill can verify current claims against primary sources. Without those capabilities, it says the live check could not run and stays inside the shipped snapshot.
 
-### Try it
+#### Try it
 
 In Codex or another Agent Skills-compatible client:
 
@@ -77,9 +101,13 @@ skills/
     agents/openai.yaml
     evals/evals.json
     references/
+  project-control/
+    SKILL.md
+    agents/openai.yaml
+    references/
 ```
 
-The installable skill is self-contained and has no required runtime dependencies or build step.
+Each installable skill is self-contained. Runtime-specific requirements are stated in its README section and skill package.
 
 ## License and attribution
 

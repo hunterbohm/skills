@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Control"
+  short_description: "Adaptive project views inside the Codex App"
+  default_prompt: "Use $project-control to get me on top of this project with an adaptive Codex App visualization."
+
+policy:
+  allow_implicit_invocation: true
