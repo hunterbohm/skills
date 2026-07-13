@@ -2,7 +2,7 @@
 
 This file is generated from the installable packages under `skills/`.
 
-Install any skill globally with its command below. Run `npx skills@latest add hunterbohm/skills --list` to preview the live repository.
+Install any skill globally with its command below. Run `npx --yes skills@1.5.15 add hunterbohm/skills --list` to preview the live repository.
 
 ## Business
 
@@ -13,7 +13,7 @@ Apply Alex Hormozi's published business frameworks with constraint-first diagnos
 **Compatibility:** Agent Skills-compatible clients
 
 ```bash
-npx skills@latest add hunterbohm/skills --skill ask-hormozi --global
+npx --yes skills@1.5.15 add hunterbohm/skills --skill ask-hormozi --global
 ```
 
 ## Project Management
@@ -25,5 +25,5 @@ Project lens that builds an adaptive Codex App visualization from the active pro
 **Compatibility:** Codex App only
 
 ```bash
-npx skills@latest add hunterbohm/skills --skill project-control --agent codex --global
+npx --yes skills@1.5.15 add hunterbohm/skills --skill project-control --agent codex --global
 ```

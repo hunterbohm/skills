@@ -7,11 +7,13 @@
     "url": "https://github.com/hunterbohm/skills"
   },
   "license": "MIT",
+  "devDependencies": {
+    "skills": "1.5.15"
+  },
   "scripts": {
     "catalog": "python3 scripts/generate-catalog.py",
     "catalog:check": "python3 scripts/generate-catalog.py --check",
-    "validate": "python3 scripts/validate.py && python3 scripts/validate/ask-hormozi.py && npm run catalog:check",
-    "discover": "npx -y skills@1.5.15 add . --list",
-    "discover:latest": "npx -y skills@latest add . --list"
+    "validate": "python3 scripts/validate.py && python3 scripts/test-security-validation.py && python3 scripts/validate/ask-hormozi.py && npm run catalog:check",
+    "discover": "skills add . --list"
   }
 }
