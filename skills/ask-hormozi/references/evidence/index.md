@@ -1,0 +1,268 @@
+<!-- GENERATED — do not hand-edit.
+     Source: hunterbohm/hormozi-glossary glossary.yml
+     Revision: a012cfeb18b81e3faa54cf78db0b5d5c645b7114 (2026-07-10)
+     Exact excerpts are normalized contiguous transcript matches, capped at 20 words.
+     Other entries are explicitly paraphrase-only or citation-only. -->
+
+# Hormozi Evidence Index (243 concepts)
+
+Use this only to locate a concept, then open the matching evidence slice.
+
+## Mindset & Redefined Words → `mindset.md`
+- **'F*** it' happiness / anxiety (stripping meaning)** — Rob a problem or negative trait of all meaning and it loses its power over you.
+- **Absolute Responsibility** — Take total responsibility for outcomes instead of preserving a victim story.
+- **Anxiety** — The feeling you get from having many options but no priorities (or from imagining bad future outcomes you can't control).
+- **Attention (the scarcest resource)** — Attention, not time, is the entrepreneur's most valuable and most contested resource.
+- **Being Is Doing (Identity)** — You don't 'become' a type of person and then act — identity is just a description of what you repeatedly do.
+- **Boredom** — The name most people give to the unglamorous, repetitive work that mastery actually requires.
+- **Burnout** — Not a symptom of too much work, but of not getting out of the work what you wanted — the reward stretching too far apart.
+- **Capital-M Meaning vs little meaning** — There's no cosmic capital-M Meaning; the absence of one frees you to assign your own little-m meaning.
+- **Commitment (elimination of alternatives)** — Commitment is not intensity of feeling but removing the other options, so staying the course becomes the default.
+- **Comparison as the Ruler for Measurement** — Comparison is not the thief of joy — it is the ruler you need to measure difference so you can improve; judgment about the comparison is the problem.
+- **Confidence** — Belief that comes from proof in your past, not from hyping yourself up in the present — and it's domain-specific.
+- **Courage** — Taking the action while fear is present.
+- **Discipline** — Being consistent with the things you don't like — anyone can be consistent with what they enjoy.
+- **Ego Padding** — Using problems, potential, or trauma as padding that protects the ego from why you have not succeeded.
+- **Entitlement** — Expecting life or other people to give you something you have not earned.
+- **Failure (event, not identity)** — Failing means an attempt failed; it does not make you a failed person.
+- **Failure Resume** — A deliberate inventory of your failures kept as an asset instead of a polished wins-only résumé.
+- **Fallacy of the Perfect Pick** — The belief that one perfect choice will carry you all the way, so you overanalyze and never start.
+- **Fear** — A signal to examine, not obey — usually an overestimated downside blocking an underestimated upside.
+- **Friendship (as alignment/degree)** — Friendship isn't binary; it's a degree of alignment, and anyone who resents your wins no longer qualifies.
+- **Guilt** — The feeling that follows breaking your own rules.
+- **Happiness vs. Fulfillment** — Chasing happiness directly backfires; lasting fulfillment comes from being useful to others and doing hard, meaningful work.
+- **Hate as Feedback** — Treat hate as environmental data to evaluate, not as good or bad identity evidence.
+- **Hopelessness (Sadness)** — The feeling you get from a perceived lack of options — believing there's nothing you can do.
+- **Humility** — Not lowering your regard for yourself, but raising your regard for other people.
+- **Imposter Adaptation** — When you keep disproving imposter syndrome yet it persists — it's become an addiction to the feeling, not a competence gap.
+- **Imposter Syndrome (as misrepresentation)** — Imposter syndrome only shows up when you misrepresent your achievements; stick to facts and it disappears.
+- **Impulse Control / Delayed Gratification** — The ability to wait and keep providing value before you take the reward — the rarest thing separating the rich from everyone else.
+- **Insecurity (Productive Insecurity)** — The nagging sense of not being enough — which, paired with a superiority complex and impulse control, is a common trait of the ultra-successful.
+- **Intelligence** — How fast you change your behavior when facing the same situation — intelligence is a rate, not a fixed trait.
+- **Inversion Thinking (invert to get rich)** — To find the path to wealth, first list every way to stay poor — then do the opposite.
+- **Jealousy** — Fear that someone will take something you already have.
+- **Learning** — Doing something different the next time you face the exact same situation.
+- **Love** — How much you're willing to sacrifice to maintain a relationship — that's how you can measure it.
+- **Loving Logically** — Choosing a life partner by aligned values and trajectory rather than by romantic chemistry alone.
+- **Luck (as manufactured volume)** — You don't get lucky; you manufacture luck by increasing the sheer volume of attempts.
+- **Manipulate Your Environment** — Deliberately shape your surroundings and social conditions so the desired behavior becomes easier and the wrong behavior harder.
+- **Mental Toughness** — Not an innate trait but a measurable skill: the odds a bad thing makes you act against your own goals.
+- **Motivation** — A response to deprivation — its strength equals how big a gap you perceive between where you are and where you want to be.
+- **Negative Emotional Motivation** — So-called negative emotions like envy can be legitimate, powerful fuel for achievement.
+- **Obsession** — What normal people call it when someone is simply trying far harder than they are.
+- **Open to Goal** — Work each day until a specific output goal is hit — no matter how long it takes — rather than working fixed hours.
+- **Pain (as a price)** — Pain isn't damage to avoid; it's the price tag on an outcome you want.
+- **Passion** — Not the starting fuel you follow, but the residue of competence and suffering you develop over time.
+- **Patience** — Figuring out what to do in the meantime — not passively enduring a wait.
+- **Physics of Progress** — The only reliable way to improve: informed hypothesis, test, stare nakedly at results, reformulate, retest.
+- **Pulling the Thread** — Start one small action; the positive reinforcement it generates pulls the rest of the work along with it.
+- **Regret** — Long-term pain traded for short-term comfort.
+- **Seasons (of focus)** — Breaks and pivots aren't stopping; they're shifts in focus — 'seasons' rather than an on/off switch.
+- **Second Order Emotions** — Emotions about your emotions — frustration at your anxiety, bitterness at your frustration — which you can control.
+- **Self-Belief** — Letting your belief about yourself outweigh what other people say about you.
+- **Self-care (reframed)** — Real self-care is building a life you don't need to escape from, not scheduling escapes from your life.
+- **Shame** — The feeling that follows breaking other people's rules.
+- **Stress (as perception of problems)** — Stress comes from how you categorize a problem, not from the problem itself — and that tolerance grows.
+- **Success** — A term you must define for yourself in observable actions — then it becomes achievable, because you control the inputs.
+- **Suffering & Labeling** — Much suffering isn't caused by events but by the negative labels you attach to normal human experiences.
+- **The Five Stages of Opportunity Hopping** — The cycle entrepreneurs repeat — from uninformed optimism through crash, blame, and the next shiny opportunity.
+- **The Grandfather Frame** — View a current pain from the perspective of your deathbed/grandfather self, where it's already irrelevant.
+- **The Lonely Chapter** — The in-between phase where your old peers no longer fit but your results are not big enough yet to earn a new peer group.
+- **Trust** — Making yourself punishable by another person and betting they won't use it against you.
+- **Uninformed Optimism** — Stage one of the entrepreneur lifecycle — excited about an opportunity you don't yet understand.
+- **Values Are Just Skills** — A value is not an abstract character trait but a behavioral short code — "when this happens, I do this" — and because it is a behavior, it can be trained like any other skill.
+- **Volume Negates Luck** — Do so much of the right action that random bad luck can't stop you — enough at-bats guarantees hits.
+- **Winning / Define the Win** — Winning is impressing your future self and doing the actions you can fully control — not beating other people.
+
+## Offers & Value → `offers.md`
+- **Bonuses** — Extra items added for free that make the core offer look like a steal - always better than discounting.
+- **Close-rate Pricing Diagnostic** — Your close rate reveals how underpriced you are: the higher you close, the more you're leaving on the table.
+- **Convenience & Speed as Value Levers** — Making something faster (speed) and easier (convenience) raises its value even when the result is unchanged.
+- **Create Flow, Monetize Flow, Add Friction** — First generate demand, then sell into it, then quietly reduce what you have to deliver.
+- **Divergent vs Convergent Problem-Solving** — Convergent problems have one right answer; divergent problems have infinite good answers - and pay far more.
+- **Dream Outcome** — The gap between where the customer is now and the ideal future they fantasize about.
+- **Effort & Sacrifice** — Everything the customer has to do or give up to get the result.
+- **Grand Slam Offer** — An offer so good and so unlike anything else that comparing it to competitors is impossible.
+- **Menu Upsell** — A pricing-menu tactic where an intentionally expensive option makes the core offer feel cheaper and easier to buy.
+- **Niche Slap** — Forcing an entrepreneur who is running too many things at once to pick exactly one niche, because any of them could work but none will work unless only one is chosen.
+- **Perceived Likelihood of Achievement** — How certain the buyer feels that your thing will actually work for them.
+- **Price-Value Discrepancy (Charge What It's Worth)** — Charge based on the value the buyer gets, not your costs - and being the most expensive is an advantage, being second-cheapest never is.
+- **Scarcity** — Limiting the QUANTITY available so people want it more and buy now.
+- **Sell Your Soul Problem** — Front-loading so much free value to attract customers that the business can never profitably deliver.
+- **Solution Delivery Vehicles (Delivery Cheat Codes)** — A checklist of ways to deliver each solution so you can maximize value without maximizing cost.
+- **Splintering Your Offer** — Peel one piece off your full offer and make an insane discount on it to use as a front-end lead magnet.
+- **The Commodity Problem (Commoditization)** — If your thing can be compared to competitors, you're a commodity and forced to compete on price - so become uncomparable.
+- **The Guarantee (Risk Reversal) Taxonomy** — Four ways to reverse the buyer's risk: unconditional, conditional, anti-guarantee, and implied/performance.
+- **The M-A-G-I-C Headline Formula** — A five-part recipe for naming an offer so the name itself makes people want in.
+- **The Magnetic Middle** — With three price options, moving the middle price (not the ends) controls how many of each you sell.
+- **The Offer Stack (Trim & Stack)** — Break the dream outcome into every problem, build a solution for each, then keep only the high-value pieces and bundle them.
+- **The Service Delivery Cube** — Six modalities for delivering any service, so you can pick the cheapest path that preserves the outcome.
+- **The Starving Crowd (Market > Offer > Persuasion)** — The hungry crowd matters more than the hot dog - pick a desperate market first, because a great market beats a great offer beats great persuasion.
+- **The Value Equation** — A formula for how much people want something: big dream and high certainty on top, low time and low effort on the bottom.
+- **Time Delay** — How long the buyer must wait between paying and seeing the result.
+- **Urgency** — Using deadlines and time limits to make people act now instead of later.
+- **Virtuous Cycle of Price** — Raise price → higher margins → better talent → better delivery → better reputation → more demand → raise price again.
+
+## Leads & Advertising → `leads.md`
+- **3 Buckets of Content** — A content taxonomy with three outcomes — pure entertainment, teaching-plus-entertaining, and pure education that changes behavior.
+- **3 Laws of Advertising** — Three permanent rules of advertising — do something, improve what works, and never assume a winner lasts forever.
+- **Advertising (Hormozi's definition)** — The process of making your stuff known — letting people know about the things you sell.
+- **Affiliate** — An independent business that promotes your stuff to its own audience in exchange for money, free stuff, or both.
+- **Agency (as a Paid Apprenticeship)** — Hire a marketing agency to LEARN their skill, document it, then bring it in-house — not to outsource forever.
+- **Brand / Branding** — A brand isn't a logo or a feeling; it's the deliberate pairing of your product with an outcome the customer craves.
+- **Cold Outreach** — One-to-one private contact with strangers who don't yet know you.
+- **Customer Referrals (Word of Mouth)** — Getting existing customers to bring you new customers — the highest-converting, lowest-cost lead source.
+- **Engage (a lead)** — To get a lead to show interest — to convert a contactable person into someone who has raised their hand.
+- **Engaged Lead** — A lead that shows interest in the stuff you sell — the real output of advertising.
+- **Give-Give-Give-Ask** — Provide far more free value than you request in return, then occasionally ask for the sale.
+- **Hook, Retain, Reward** — The three components of any attention-winning piece of content: grab attention, hold it, then pay it off.
+- **Lead** — A person you can contact — not a sale, not necessarily an interested person, just someone you have the ability to reach.
+- **Lead Getters** — Other people who advertise for you — the four are customers, employees, agencies, and affiliates.
+- **Lead Magnet** — A complete solution to a narrow problem that you give away (free or cheap) to get someone to engage.
+- **One Front Door** — Many marketing lines in the water, but all traffic must funnel through one single, clear destination.
+- **Post Free Content** — One-to-many public communication with a warm audience — building an audience by giving value publicly.
+- **Pyramid of Markets** — Five directions you can expand any marketplace once you've capped the obvious channel.
+- **Run Paid Ads** — One-to-many communication to a cold audience — trading money directly for reach.
+- **Sawdust** — The low-effort byproduct content (clips, extras, repurposed bits) that fills a content calendar cheaply.
+- **The Agency Trap** — Paying an agency to run your ads/content without understanding the work, then being unable to tell good from bad.
+- **The Core Four** — The only four ways to let people know about your stuff: warm outreach, post free content, cold outreach, run paid ads.
+- **The Gift Card Strategy** — Sell discounted gift cards up front to bank cash and guarantee future in-store visits and upsells.
+- **The Levels of Advertisers (Advertising Roadmap)** — A leveled roadmap of advertiser sophistication, from telling your friends what you sell up to a full executive-run lead machine.
+- **The Problem-Solution Cycle** — Every solution reveals a new problem — so solving one problem for free naturally sets up the next paid one.
+- **The Rule of 100** — Do 100 primary advertising actions a day, every day, for 100 straight days.
+- **The Selfie Strategy** — Capture a referral at the peak moment of a customer's transformation by taking a selfie together and asking who else you can invite.
+- **Value Per Second** — How much value your content delivers per unit of time the audience spends on it.
+- **Warm Outreach** — One-to-one private contact with people who already know you (your warm audience).
+- **What-Who-When (Ad Copy Framework)** — An ad-copy framework: say WHAT the offer does, WHO it's for (and the people around them), and WHEN the consequences hit.
+- **Whisper, Tease, Shout** — A three-phase launch sequence: hint quietly, then reveal, then announce loudly on launch day.
+
+## Money Models → `money-models.md`
+- **Attraction Offer** — The first, low-risk offer whose only job is to turn a cold stranger into a paying customer.
+- **Client-Financed Acquisition (CFA)** — Making a new customer's early gross profit repay their fully loaded acquisition cost, so growth can fund itself.
+- **Continuity** — An offer that charges ongoing money for ongoing value — recurring revenue you sell once and get paid for repeatedly.
+- **Customer Acquisition Cost (CAC)** — The full cost — ads plus sales — to turn a prospect into one paying customer.
+- **Downsell** — The alternative offer you make after a customer says 'no,' reshaped to fit their budget or commitment.
+- **Gross Profit (as Hormozi uses it)** — What's left from a sale after only the cost to make and deliver it — explicitly not net profit or revenue.
+- **Lifetime Gross Profit (LTGP)** — The total gross profit one customer produces over their whole relationship with you — the real reinvestable cash, not revenue or LTV.
+- **LTGP:CAC Ratio** — How many dollars of lifetime gross profit you earn per dollar spent acquiring a customer — the health check for a business model.
+- **Money Model** — A deliberate, pre-planned sequence of offers that gets a customer's acquisition cost back fast — not a single sale.
+- **Nuisance Businesses** — Businesses customers know they should use but keep deprioritizing — reputation maintenance, SEO, etc.
+- **Payback Period (30-Day Rule)** — How long it takes to earn back, in gross profit, what you spent to acquire a customer.
+- **Size of the Pie Fallacy** — The false belief that a competitor entering your channel shrinks your share of a fixed market.
+- **Smash and Grab Businesses** — Pure media-arbitrage businesses that spike fast, have no brand or delivery moat, and collapse when the arbitrage closes.
+- **The 30-Day 2x CAC Rule** — Aim for a new customer's first-30-day gross profit to exceed twice their fully loaded customer-acquisition cost.
+- **The Pie Equation** — Every business grows by only three levers: more customers, bigger transactions, or more purchases over time.
+- **Upsell** — The offer that solves the new problem created by the customer's first purchase.
+
+## Sales → `sales.md`
+- **3A Framework (Acknowledge, Associate, Ask)** — Handle a prospect's objection by Acknowledging it, Associating it with good buyer behavior, then Asking a question.
+- **Best Case / Worst Case Close** — Lay out both outcomes for a hesitating prospect so the obvious asymmetric upside makes the decision for them.
+- **Clarify (CLOSER: C)** — Open the call by getting the prospect to say why they're really there and what they want.
+- **Damaging Admission** — Volunteer a real negative about yourself or your offer first, because self-stated negatives make everything you say next more believable.
+- **Deals Die in the Details** — When a salesperson answers a prospect's detailed, tactical questions directly, the deal falls apart — because answering details surrenders control of what counts as correct and invites nitpicking.
+- **Explain Away Concerns (CLOSER: E)** — Handle the objections and stalls that come up after you ask for the sale.
+- **Exposure Therapy for Sales** — Cure fear of rejection by deliberately chasing a high volume of no's until the no stops being scary.
+- **Ghost Products** — A product you recommend a customer buy somewhere else (or that you don't even carry) purely to make a concession that earns their trust before you sell the high-margin items.
+- **Label the Problem (CLOSER: L)** — Say the prospect's problem back to them so they own it out loud.
+- **Objection (a Request for Certainty)** — An objection isn't a rejection — it's the prospect asking for enough certainty to feel safe deciding.
+- **Overview Their Past Pain (CLOSER: O)** — Walk through everything they've already tried and how it failed.
+- **Reinforce the Decision (CLOSER: R)** — Keep selling the buyer on their choice after they've already said yes.
+- **Sales Problem vs. Leads Problem (Constraint Diagnostic)** — Before scaling spend, figure out whether you're failing to get enough prospects or failing to convert the ones you already get.
+- **Say Yes by Saying No** — Phrase the question so the prospect’s “no” is the agreement you actually want.
+- **Scale of 1-10 Close** — A close that asks the prospect to rate interest from 1–10, then closes the gap by asking what would make it a 10.
+- **Sell the Vacation (CLOSER: S)** — Sell the destination and the result, never the boring process of getting there.
+- **Silence Sells** — In a sales conversation, deliberately let silence sit so the prospect keeps talking, building rapport and revealing information.
+- **SPCL Stack (Status, Power, Credibility, Likeness)** — The four levers of influence that make an audience comply with what you ask of them.
+- **Speed to Lead** — How fast you contact a fresh lead — and the faster you are, the more you close.
+- **The 3 A's (Acknowledge, Associate, Ask)** — A three-move way to reframe any objection: acknowledge it, associate it with good buyers, then ask a question.
+- **The Assumed Close** — Close by presupposing the purchase and asking the prospect to choose within the purchase rather than whether to buy at all.
+- **The Belief Continuum** — Selling power depends not on whether you believe in your product but on how strongly you believe.
+- **The Calculator Close** — Close by quantifying the money you'll make or save the client, then pricing your fee as a fraction of that number.
+- **The CLOSER Framework** — Hormozi's six-step sales-call sequence for taking a prospect from hello to a signed 'yes.'
+- **The Conviction Framework** — Belief in the product, delivered through tone, matters far more than the words of the script.
+- **The Marriage Proposal Close** — Don't pitch until you already know the prospect will say yes; like a proposal, only ask the closing question when the answer is certain.
+- **The Reframe (Objection Reframing)** — The one-to-three sentences you say after any answer that isn't 'yes' to change how the prospect sees their own objection.
+- **The Secretary Close** — When a prospect grills you on expert details you can't answer, position yourself as the intake person (not the expert) to keep qualifying and hand off the close.
+- **The Unicorn Close** — Get the prospect to say yes to a hypothetical perfect version first, then isolate what blocks that yes in reality.
+
+## Scaling & Constraints → `scaling.md`
+- **4 Shapes of Business** — A taxonomy of four business growth curves — e-commerce, service, education/info media, and software — each with its own ramp and constraints.
+- **A-Players / Star Employees** — The best hires make you more money than they cost and are obvious almost immediately — great isn't ambiguous.
+- **Accountability** — Accountability is a management system: set the expectation, measure it, then reinforce the behavior repeatedly.
+- **Bundling and Unbundling Terms** — Breaking a vague directive ('be charismatic') into concrete behaviors, and bundling behaviors back into a usable label.
+- **Capacity** — The slack — time, skill, money, attention — that lets you actually SEE and seize an opportunity when it shows up.
+- **Culture (as Unspoken Rules)** — Culture is not a poster or values deck — it is hundreds/thousands of unspoken rules enforced by whoever controls the reinforcers.
+- **Delegation (the Price of Scaling)** — Delegation is the price of scaling — you pay with loss of control, and entrepreneurship is a path of relinquishing control.
+- **Drive-By Communications** — Brief, casual pop-ins with team members that build trust and culture without a formal meeting.
+- **Focus (A Priority Means Two Things Can't Be Equal)** — Real focus means one thing wins; if two things are 'equally important' you haven't actually chosen, and neither gets your full power.
+- **Leadership (Getting Them to Want It)** — Leadership is getting someone to believe that what you want them to do is what they want to do.
+- **Let the Fires Burn** — Deliberately allow lower-priority problems to go unsolved so you can concentrate resources on the one constraint that matters most.
+- **Logo Retention vs. Revenue Retention** — Logo retention counts how many customers stayed; revenue retention counts how many dollars stayed — and dollars can exceed 100%.
+- **More, Better, New** — Prioritize growth by first doing MORE of what works, then making it BETTER, and only then adding something NEW.
+- **Paired Metrics** — Manage each role by two opposing metrics at once so optimizing one can't quietly wreck the other.
+- **Power (as Influence Over Events or People)** — Power is the ability to direct or influence events or people — neither good nor bad until used.
+- **Repeated Roles** — Roles a business has many of (sales reps, trainers), where you can build a real career ladder and promotion path.
+- **Standards** — Standards are the floor you enforce, not the ideals you talk about; the business rises or falls to what you tolerate.
+- **Strategy (as prioritization)** — Strategy is allocating limited resources against unlimited options — and true priority means only one.
+- **The 2x Bottleneck Test** — Ask what would break if your business doubled tomorrow, and that broken thing is the constraint you should fix now.
+- **The Big Hairy Problem** — Every business is really defined by its one biggest constraint — usually not the part you enjoy.
+- **The Four Business Constraints (Leads, Sales, Delivery, Profit)** — Every business problem is really one of only four bottlenecks: getting leads, closing them, keeping them, or keeping the cash.
+- **The Goose and the Eggs** — The 'goose' is the core business that generates value; the 'eggs' are the sellable assets it lays — build the goose, sell the eggs.
+- **The Management Diamond** — A diagnostic for why an employee isn't doing what you want: clarity, capability, capacity, or willingness.
+- **The Perfect Business (5 Attributes)** — The five traits that make any business easier to grow and more valuable; the more it has, the better the vehicle.
+- **The Phone Test** — Leave a brick-and-mortar location alone; if the phone doesn't ring and it still grows in 3 months, it's ready to replicate.
+- **The Swamp ($1M-$3M)** — The growth band where a business is too big for founder-only effort but not yet profitable enough to buy much leverage.
+- **The Three Lines of Business** — A simple business model picture that compares value delivered, price charged, and cost to fulfill.
+- **The Woman in the Red Dress** — The tempting new opportunity that pulls your attention off the main thing — and looking at her is how you get shot.
+- **Theory of Constraints (Hormozi's application)** — A business grows only as fast as its single biggest bottleneck lets it, so you fix that one thing and ignore everything else.
+- **Two Funnels** — The idea that every business runs two funnels in parallel — one that acquires customers and one that acquires team.
+- **Underdog Advantage / Nail-it-then-scale-it** — Being unknown is an edge: you can experiment risk-free, so perfect the offer before you scale it.
+
+## Wealth & Money → `wealth-worldview.md`
+- **Asymmetric Bets (All-In While Downside Is Nothing)** — Early on, take asymmetric bets where downside is near-zero and upside is life-changing — go all-in while you have nothing to lose.
+- **Billionaire (owns, not earns)** — A billionaire isn't someone who makes a billion a year; it's someone who owns a billion in assets.
+- **Cash Flow Is Oxygen** — Cash flow is the business's air supply — without it you cannot breathe long enough to fix anything else.
+- **Earn vs Learn (Why Young People Stay Poor)** — Young people stay poor when they optimize for immediate earning instead of the learning season that multiplies future earning.
+- **Enterprise Value vs. Income (Own Assets, Don't Just Earn)** — Real wealth is owning assets that are worth a lot, not earning a big paycheck — billionaires own a billion, they don't make a billion a year.
+- **Goodwill (Positive Sentiment + Behavioral Influence)** — Goodwill is positive sentiment plus a degree of influence over someone's behavior — and it compounds faster than money.
+- **He Who Gives the Money Has the Power** — The person who supplies the money sets the terms — capital providers control, capital seekers submit.
+- **Information Arbitrage** — The thesis that every business profits because one side knows how to create a result better or cheaper than the buyer does.
+- **Inverted Priorities** — Optimizing a small lever (tax savings) in a way that damages a bigger lever (income, lifestyle, growth).
+- **Leverage** — Getting more output per unit of input — the reason two people who work equally hard get wildly different results.
+- **Ownership Is the Goal, Not CEO** — The goal is ownership of the asset, not the CEO seat — owners make better long-term decisions with less short-term stress.
+- **Passive Income Is a Lie** — 'Passive income' is not a separate species of money — every dollar is earned over time on a spectrum of how active the activity is.
+- **Poor / Rich / Wealthy Ladder** — Poor people do the wrong things; rich people do the right things; wealthy people own the right things.
+- **Reputation** — The compounding asset of others' trust in you — built by keeping your word and protecting what people give you.
+- **Rich Buy Time / Poor Buy Stuff** — What you spend money on reveals (and creates) who you become — rich buy time, poor buy stuff, ambitious buy skills, lazy buy distraction.
+- **Rich Sell / Wealthy Buy and Build** — Rich people sell assets; wealthy people hold, buy, and build so equity compounds without tax-reset exits.
+- **Skill Stacking** — Deliberately acquire valuable, paid-for skills and layer them so your combined ability (and income) compounds.
+- **Sphere of Confidence** — Only invest in what you actually understand; returns come from your knowledge, not from chasing hot deals outside your competence.
+- **Strategic Frugality ('looking poor is smart')** — Deliberately looking poor — extreme frugality — frees cash to compound into business growth.
+- **The 4 Ways to Build Wealth** — The four routes to serious wealth: raise other people's money, bootstrap your own, invest in others, or manage others' money.
+- **The 6 Levels of Building Wealth** — Six ways to get paid, ranked by how much risk you carry — the more (perceived) risk you take, the more you earn.
+- **The Money Ladder** — The pecking order of who gets paid first when money flows through a business.
+- **The Only 4 Ways to Get Money** — There are only four ways to get money — steal it, inherit it, marry into it, or trade something for it.
+- **The Three Marshmallow Problem** — Having learned delayed gratification so well you defer forever, hoping for a third marshmallow (a sale) that may never come.
+- **Valued Based on Your Utility** — Despite self-worth messaging, the market values you based on utility — when young you have energy but no utility, so trade energy for usefulness.
+- **Work (= output × leverage)** — Work isn't hours or effort; it's output multiplied by leverage.
+
+## Meta & Method → `meta.md`
+- **Choose Your Regrets (decision frame)** — Because opportunity cost is baked into existence (you can't split-test life), regret is unavoidable — so the only sane move is to proactively choose which regret you're willing to live with.
+- **Document, Don't Create (content philosophy)** — Make content by documenting what's actually happening in your life and work rather than trying to invent "original" ideas from a blank page.
+- **Education (as buying time)** — Education is the only way to actually buy time — you pay to skip the years someone else spent learning it.
+- **Energy (as observables)** — "Good energy" isn't a vibe — it's a bundle of observable behaviors that other people have learned to associate with positive past experiences.
+- **Gratitude (operationalized)** — Gratitude is an operation you perform: imagine something good, imagine losing it, then realize you still have it — and the feeling follows.
+- **Humaning** — The non-work maintenance tasks that eat your available hours — eating, errands, recovery, life logistics.
+- **Ignorance Debt** — The growth you don't have because you lack the blueprint — the time it costs you to figure out what an expert already knows.
+- **Legacy (is a myth; education is the only real legacy)** — Personal legacy — your name living on for generations — is a myth over any real time horizon; the only legacy that compounds is education passed to the next human who picks up the baton.
+- **Leverage Ladder (smart vs hard work)** — Success isn't more hours; it's climbing four levels of getting more output per hour.
+- **Maker Manager Time** — Split your day into maker blocks (deep, uninterrupted creation) and manager blocks (meetings, decisions, reactive work).
+- **Missionary Heart** — Founders driven by a mission the world needs, willing to grind 15 years for it — the opposite of mercenaries chasing arbitrage.
+- **Need-To-Believes** — The specific assumptions you must hold as believable before making a big, irreversible investment.
+- **Offer Hoppers** — Businesses that shoot up fast then fizzle, surviving by launching a new offer every year.
+- **One of Zero** — Doing work no one else will do and things you're not even sure you can do — living beyond others' definitions of you.
+- **Purpose (the purpose of life is to learn)** — Hormozi's stated purpose of life is to learn — and learning is "same condition, new behavior," so similar conditions become the curriculum.
+- **The Epic Story Razor (decision-making)** — When unsure what to do, pick the option that will make the most epic story to tell — which is usually the long saga, not the shortcut.
+- **The Game (Infinite Game)** — Business and life are infinite games you don't 'win' — you just stay in, so winning becomes a matter of not quitting.
+- **The Golden Turd** — The one thing you have going that you keep polishing to perfection instead of taking more swings.
+- **The Three Generations Frame (mortality)** — In three generations, everyone who knew you — including the people whose opinions stopped you — will be dead and forgotten, so the fear of judgment is already obsolete.

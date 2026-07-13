@@ -1,0 +1,130 @@
+{
+  "skill_name": "ask-hormozi",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "What would Hormozi do here? I run a $12k/month bookkeeping service for ecommerce brands. We retain clients well and close about 35% of qualified calls, but only get six qualified calls a month. CAC is roughly $400, first-30-day gross profit is about $1,600, and delivery has room for ten more clients.",
+      "expected_output": "Diagnoses qualified lead volume as the current constraint, confirms the acquisition and delivery gates from the supplied numbers, applies one lead-generation framework, and ends with one measurable action for today.",
+      "files": [],
+      "assertions": [
+        "Names leads, not sales or delivery, as the binding constraint.",
+        "Computes first-30-day GP:CAC as 4.0x and does not subtract COGS from gross profit a second time.",
+        "Uses at most one short exact quote and only if it preserves a shipped evidence link; otherwise paraphrases.",
+        "Prescribes a measurable lead-generation input that delivery capacity can absorb.",
+        "Ends with one highest-leverage action rather than a multi-week roadmap."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Explain Hormozi's value equation to me like I'm smart but new to business. Use an example for a meal-prep service.",
+      "expected_output": "Defines the four variables in plain language, applies them to one meal-prep example, notes that perceived value does not excuse weak delivery, and stops without forcing an advisory diagnosis.",
+      "files": [],
+      "assertions": [
+        "Shows Value = (Dream Outcome x Perceived Likelihood) / (Time Delay x Effort and Sacrifice).",
+        "Explains all four variables through one concrete meal-prep example.",
+        "Does not ask for CAC, diagnose a constraint, or prescribe lead volume.",
+        "Does not invent a Hormozi quotation or URL."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "My closer is the problem. We get 80 demo calls a month for our $5,000 analytics implementation, but close only 8%. Prospects repeatedly say it sounds like every other dashboard agency, takes too long to launch, and feels risky. Give me the Hormozi answer.",
+      "expected_output": "Uses the offer override instead of blaming the closer, maps the objections to the value equation, and recommends one offer test before more traffic or sales pressure.",
+      "files": [],
+      "assertions": [
+        "Diagnoses an offer problem masquerading as a sales problem.",
+        "Maps generic, slow, and risky to the appropriate value-equation levers.",
+        "Does not recommend buying more leads or merely training the closer.",
+        "Proposes one measurable offer revision or validation test."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Use ask-hormozi on this: our ads are profitable and we can double spend, but onboarding takes 19 days, 27% of customers cancel in month one, and support tickets are piling up. Should we scale now?",
+      "expected_output": "Refuses to scale a leaky delivery system, identifies activation and first-month churn as the constraint, and gives one measurable delivery action.",
+      "files": [],
+      "assertions": [
+        "Names delivery or retention as the current constraint.",
+        "Explicitly advises against doubling ad spend yet.",
+        "Uses the doubling question only to expose the next failure, not as the diagnosis by itself.",
+        "Ends with one measurable onboarding or activation fix."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Would Hormozi call this client-financed acquisition? We collect $300 in the first 30 days, direct fulfillment COGS is $50, and fully loaded CAC is $100. Show the math and distinguish the current rule from the older cash rule.",
+      "expected_output": "Calculates first-30-day gross profit as $250 and GP:CAC as 2.5x, says it clears both current gross-profit thresholds, then separately evaluates the older cash formulation without mixing accounting bases.",
+      "files": [],
+      "assertions": [
+        "Calculates GP30 = $300 - $50 = $250 and GP30:CAC = 2.5x.",
+        "States that the bare minimum is GP30 > CAC and the preferred current standard is GP30 > 2x CAC.",
+        "Evaluates the older rule as cash30 > 2 x (CAC + COGS), here $300 > $300, and handles the strict greater-than boundary accurately.",
+        "Never states gross profit > 2 x (CAC + COGS) or subtracts COGS twice.",
+        "Cites only shipped evidence or labels the explanation as a distillation."
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Ask Hormozi: my agency feels stuck. Tell me exactly what to do.",
+      "expected_output": "Does not fabricate a diagnosis; asks once for a compact set of load-bearing business and economics inputs, while keeping the response easy to answer.",
+      "files": [],
+      "assertions": [
+        "Does not guess whether leads, sales, delivery, or profit is the constraint.",
+        "Asks one compact batch covering offer and avatar, price, customers or qualified opportunities, CAC, first-30-day gross profit, retention or churn, and prior attempts.",
+        "Does not ask a long interview one question at a time.",
+        "Does not manufacture benchmarks, quotes, or URLs."
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "What would Hormozi do with my pre-revenue two-sided marketplace matching patients to specialists for an experimental medical procedure? Should I guarantee outcomes, run the Rule of 100, and optimize for 30-day CAC payback immediately?",
+      "expected_output": "Flags the marketplace cold start, regulated medical outcomes, and pre-revenue stage as reasons to translate rather than blindly apply the playbook; rejects outcome guarantees and gives one safe validation or market-seeding action.",
+      "files": [],
+      "assertions": [
+        "Identifies all three fit problems: pre-revenue economics, two-sided cold start, and regulated medical outcomes.",
+        "Does not recommend guaranteeing patient outcomes.",
+        "Does not pretend CAC payback can be optimized before a repeatable transaction and fulfillment path exists.",
+        "Does not prescribe blind high-volume outreach to patients.",
+        "Offers one compliance-aware validation or single-side seeding action."
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Hormozi says 'You only fail when you stop focusing,' right? I have three audiences, four offers, and five acquisition channels because I don't want one thing to stop working. What would he tell me?",
+      "expected_output": "Corrects or declines the unsupported quotation, identifies fragmentation as the focus constraint, and recommends one concrete subtraction decision.",
+      "files": [],
+      "assertions": [
+        "Does not validate the supplied sentence as an exact Hormozi quote unless shipped evidence or verified live research supports it.",
+        "Identifies fragmented focus before diagnosing a channel-level lead problem.",
+        "Recommends choosing one audience, one offer, and one primary acquisition path for a defined test window or equivalent concrete subtraction.",
+        "Ends with one decision the user can make today."
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "What has Alex Hormozi said publicly in the last 90 days about AI agents replacing employees? Check current primary sources and give me one exact quote only if a transcript supports it.",
+      "expected_output": "Runs the live-research branch, uses a current primary source, distinguishes verified exact wording from paraphrase, and adds a compact source-basis note.",
+      "files": [],
+      "assertions": [
+        "Treats recency as a reason to research rather than answering solely from the shipped snapshot.",
+        "Uses an official Hormozi or Acquisition.com source, or a full interview published by the original host.",
+        "Includes a direct URL, source title, publication date when available, and the date the research ran.",
+        "Uses no more than 20 quoted words and quotes only wording verified against the primary recording or transcript.",
+        "If current public research is unavailable, says so and does not pretend the snapshot is current."
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "A quote card says Alex Hormozi said, 'AI will eliminate every sales job by 2027.' Did he actually say that? Find the public source or tell me you cannot verify it.",
+      "expected_output": "Runs a focused attribution search and either verifies the exact wording against a primary source or explicitly declines the attribution without filling the gap from memory.",
+      "files": [],
+      "assertions": [
+        "Treats the quote card and search snippets as discovery leads, not proof.",
+        "Preserves a direct primary URL when a supporting source exists.",
+        "If no primary support is found, states that the exact claim could not be verified.",
+        "Does not invent a transcript, timestamp, publication date, or repaired URL.",
+        "Does not force a business diagnosis onto a source-verification request."
+      ]
+    }
+  ]
+}

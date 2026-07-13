@@ -1,0 +1,26 @@
+name: Validate skills
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Validate release payload
+        run: |
+          python3 scripts/validate.py
+          python3 scripts/validate-ask-hormozi.py
+      - name: Verify Agent Skills discovery
+        env:
+          DO_NOT_TRACK: "1"
+        run: npx -y skills@1.5.15 add . --list

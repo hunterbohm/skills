@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ask Hormozi"
+  short_description: "Source-backed Hormozi business advice"
+  default_prompt: "Use $ask-hormozi to diagnose my business constraint and give me one source-backed next move."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,30 @@
+{
+  "category_counts": {
+    "leads": 31,
+    "meta": 19,
+    "mindset": 64,
+    "money-models": 16,
+    "offers": 27,
+    "sales": 29,
+    "scaling": 31,
+    "wealth": 26
+  },
+  "evidence_counts": {
+    "book_or_source_citation": 20,
+    "exact_linked_excerpt": 111,
+    "paraphrase_only": 112
+  },
+  "schema_version": 1,
+  "source": {
+    "repository": "https://github.com/hunterbohm/hormozi-glossary",
+    "revision": "a012cfeb18b81e3faa54cf78db0b5d5c645b7114",
+    "revision_date": "2026-07-10",
+    "term_count": 243
+  },
+  "transcript_audit": {
+    "file_count": 2032,
+    "maximum_public_excerpt_words": 20,
+    "normalization": "NFKC lowercase alphanumeric contiguous match",
+    "sha256": "c47ca00881b4ec682f1608846670dcc146ef37c8893a29924f51f789a525d6b8"
+  }
+}
