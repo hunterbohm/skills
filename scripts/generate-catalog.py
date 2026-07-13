@@ -11,6 +11,7 @@ import re
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
 SKILLS_ROOT = REPO_ROOT / "skills"
 CATALOG = REPO_ROOT / "docs" / "catalog.md"
+INSTALLER_VERSION = "1.5.15"
 
 
 def frontmatter(path: pathlib.Path) -> dict[str, str]:
@@ -64,7 +65,7 @@ def render() -> str:
         "",
         "This file is generated from the installable packages under `skills/`.",
         "",
-        "Install any skill globally with its command below. Run `npx skills@latest add hunterbohm/skills --list` to preview the live repository.",
+        f"Install any skill globally with its command below. Run `npx --yes skills@{INSTALLER_VERSION} add hunterbohm/skills --list` to preview the live repository.",
         "",
     ]
     for category, skills in sorted(grouped.items()):
@@ -84,7 +85,7 @@ def render() -> str:
                     f"**Compatibility:** {support}",
                     "",
                     "```bash",
-                    f"npx skills@latest add hunterbohm/skills --skill {name}{agent_flag} --global",
+                    f"npx --yes skills@{INSTALLER_VERSION} add hunterbohm/skills --skill {name}{agent_flag} --global",
                     "```",
                     "",
                 ]

@@ -1,0 +1,47 @@
+name: Latest installer compatibility
+
+on:
+  schedule:
+    - cron: "17 9 * * 1"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: latest-installer-canary
+  cancel-in-progress: true
+
+jobs:
+  canary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
+        with:
+          node-version: 22
+      - name: Check the current upstream installer in an isolated environment
+        run: |
+          test_home="$(mktemp -d)"
+          test_cache="$(mktemp -d)"
+          env -i \
+            PATH="$PATH" \
+            HOME="$test_home" \
+            NPM_CONFIG_CACHE="$test_cache" \
+            NPM_CONFIG_USERCONFIG=/dev/null \
+            DO_NOT_TRACK=1 \
+            NO_UPDATE_NOTIFIER=1 \
+            CI=1 \
+            npx --yes skills@latest add . --list
+          env -i \
+            PATH="$PATH" \
+            HOME="$test_home" \
+            NPM_CONFIG_CACHE="$test_cache" \
+            NPM_CONFIG_USERCONFIG=/dev/null \
+            DO_NOT_TRACK=1 \
+            NO_UPDATE_NOTIFIER=1 \
+            CI=1 \
+            npx --yes skills@latest add . --skill project-control --agent codex --global -y
+          diff -qr skills/project-management/project-control "$test_home/.agents/skills/project-control"

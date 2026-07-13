@@ -15,13 +15,13 @@ These are workflows I use myself, packaged so an agent can apply them consistent
 Preview the available skills:
 
 ```bash
-npx skills@latest add hunterbohm/skills --list
+npx --yes skills@1.5.15 add hunterbohm/skills --list
 ```
 
 Install from the interactive picker:
 
 ```bash
-npx skills@latest add hunterbohm/skills
+npx --yes skills@1.5.15 add hunterbohm/skills
 ```
 
 Or install one skill directly using the command in the [skill catalog](docs/catalog.md). Host-specific skills include an explicit agent target so they do not leak into incompatible runtimes.
