@@ -1,0 +1,17 @@
+{
+  "name": "hunterbohm-skills",
+  "private": true,
+  "description": "Hunter Bohm's practical agent skills for running real work",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hunterbohm/skills"
+  },
+  "license": "MIT",
+  "scripts": {
+    "catalog": "python3 scripts/generate-catalog.py",
+    "catalog:check": "python3 scripts/generate-catalog.py --check",
+    "validate": "python3 scripts/validate.py && python3 scripts/validate/ask-hormozi.py && npm run catalog:check",
+    "discover": "npx -y skills@1.5.15 add . --list",
+    "discover:latest": "npx -y skills@latest add . --list"
+  }
+}

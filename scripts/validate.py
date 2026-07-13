@@ -138,9 +138,13 @@ def validate_skill(skill: pathlib.Path, check: Validation) -> None:
     validate_evals(skill, check)
 
 
+def discover_skills() -> list[pathlib.Path]:
+    return sorted(path.parent for path in SKILLS_ROOT.rglob("SKILL.md"))
+
+
 def main() -> None:
     check = Validation()
-    skills = sorted(path for path in SKILLS_ROOT.iterdir() if path.is_dir())
+    skills = discover_skills()
     check.require(bool(skills), "no exported skills found")
     for skill in skills:
         validate_skill(skill, check)
