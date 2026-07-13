@@ -276,8 +276,13 @@ def main() -> None:
         elif name:
             names[name] = skill
     if check.errors:
-        for error in check.errors:
-            print(f"ERROR: {error}", file=sys.stderr)
+        # Do not emit individual diagnostics here. This validator deliberately
+        # inspects payloads for secrets, so a shared error collection must never
+        # become a path for repository content to reach public CI logs.
+        print(
+            f"ERROR: validation failed with {len(check.errors)} policy violation(s)",
+            file=sys.stderr,
+        )
         raise SystemExit(1)
     print(f"Validated {len(skills)} skill(s): {', '.join(path.name for path in skills)}")
 
