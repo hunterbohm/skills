@@ -1,0 +1,7 @@
+interface:
+  display_name: "Workflow Roadmap"
+  short_description: "Personalized roadmap for what to automate first"
+  default_prompt: "Use $workflow-roadmap to interview me and write my personalized workflow roadmap."
+
+policy:
+  allow_implicit_invocation: true
