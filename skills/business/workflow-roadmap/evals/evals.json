@@ -1,0 +1,44 @@
+{
+  "skill_name": "workflow-roadmap",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Which workflow should I automate first? I run Brightside Bookkeeping (brightsidebooks.example), a 4-person bookkeeping firm on Slack. The worst chunk of my week: every Friday I spend about 3 hours pulling numbers from QuickBooks into a client report email, for 6 clients. Scheduling and lead follow-up also eat time. My hour is worth about $150. Tools: QuickBooks, Gmail, Calendly, Slack. I tried ChatGPT for report drafts once but it made numbers up. Never automate: anything that files taxes.",
+      "expected_output": "Asks only for the ground not already covered, saves answers to a notes file, then writes a Workflow-Roadmap file with the five sections, conservative math from the user's own numbers, the Friday reporting workflow as the #1 pick, and the single quiet closing line.",
+      "files": [],
+      "assertions": [
+        "Does not re-ask questions the prompt already answered; any interview batch covers only missing ground.",
+        "Writes the roadmap to a local markdown file with exactly the five template sections in order.",
+        "Shows the workflow-map math from the user's numbers (e.g. weekly frequency times duration) and rounds down rather than inflating.",
+        "Picks the Friday client-report workflow as #1 and keeps tax filing out of every recommendation.",
+        "Grounds the 'runs itself' paragraph in QuickBooks, Gmail, Calendly, or Slack, described as a supervised agent that drafts and waits for approval.",
+        "Ends the document with the exact Hunter Bohm closing line and includes no other pitch language.",
+        "Says agents, never AI staff."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "/workflow-roadmap — I'm slammed, only have a couple minutes. I'm a solo web designer. Chasing clients for content and approvals eats maybe 4 hours a week. That's all I can tell you right now.",
+      "expected_output": "Respects the time limit, asks at most one short batch of follow-ups, then builds the roadmap around the single described workflow without padding, states plainly that a short conversation would map the rest, and skips dollar math since no hourly value was given.",
+      "files": [],
+      "assertions": [
+        "Does not force all ten interview areas on a user who asked for brevity.",
+        "Builds the document around the one described workflow instead of inventing 4-8 workflows.",
+        "Plainly says a short conversation would map the remaining workflows rather than padding.",
+        "Shows hours math (about 16-17 hours/month or a conservative rounding) and omits dollar figures because no hourly value was shared.",
+        "Ends with the exact closing line and no other sales language."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Can we pick up my workflow roadmap? We got interrupted yesterday after I told you about my team and tools.",
+      "expected_output": "Checks for the workflow-roadmap-notes.md file, summarizes which ground is already covered, and resumes the interview from the first unanswered area instead of starting over.",
+      "files": [],
+      "assertions": [
+        "Looks for the local notes file before asking anything.",
+        "Tells the user where they left off and does not repeat answered questions.",
+        "Continues saving new answers to the notes file as they arrive."
+      ]
+    }
+  ]
+}
