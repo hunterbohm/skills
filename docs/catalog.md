@@ -16,6 +16,26 @@ Apply Alex Hormozi's published business frameworks with constraint-first diagnos
 npx skills@latest add hunterbohm/skills --skill ask-hormozi --global
 ```
 
+### [Workflow Audit](../skills/business/workflow-audit/SKILL.md)
+
+Audit a business's recurring workflows from connected sources, in a durable audit workspace that compounds across runs. Use when an owner wants to know where work gets stuck, what to automate first, how to build a supervised agent workflow, or what changed since the last audit.
+
+**Compatibility:** Agent Skills-compatible clients
+
+```bash
+npx skills@latest add hunterbohm/skills --skill workflow-audit --global
+```
+
+### [Workflow Build](../skills/business/workflow-build/SKILL.md)
+
+Build, prove, and report on workflows specced by the workflow-audit skill. Use when the workflow-audit skill hands off a confirmed workflow, when the owner asks to build or implement a specced workflow, or when the owner asks for run history or what an automation has returned.
+
+**Compatibility:** Agent Skills-compatible clients
+
+```bash
+npx skills@latest add hunterbohm/skills --skill workflow-build --global
+```
+
 ## Project Management
 
 ### [Project Control](../skills/project-management/project-control/SKILL.md)
