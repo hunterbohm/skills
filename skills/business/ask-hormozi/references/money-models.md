@@ -1,6 +1,6 @@
 # Money Models — Cash-Flow Architecture
 
-Use this guide when acquisition works but cash recovery limits growth. It is a paraphrased operating guide. Retrieve attribution from `references/evidence/money-models.md`.
+Use this guide when acquisition works but cash recovery limits growth. It is a paraphrased operating guide.
 
 ## Core definitions
 

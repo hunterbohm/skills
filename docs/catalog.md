@@ -8,7 +8,7 @@ Install any skill globally with its command below. Run `npx skills@latest add hu
 
 ### [Ask Hormozi](../skills/business/ask-hormozi/SKILL.md)
 
-Apply Alex Hormozi's published business frameworks with constraint-first diagnosis and source-backed attribution. Use when the user asks what a Hormozi term or framework means; what Hormozi would do in a business situation; wants an offer, funnel, script, numbers, or draft analyzed or produced through his frameworks; or wants a Hormozi attribution or current position verified against public sources.
+Apply Alex Hormozi's published business frameworks with constraint-first diagnosis and source-backed attribution. Use when the user asks what a Hormozi term or framework means; what Hormozi would do in a business situation; wants an offer, funnel, script, numbers, or draft analyzed through his frameworks; or wants a Hormozi attribution or current position verified against public sources.
 
 **Compatibility:** Agent Skills-compatible clients
 

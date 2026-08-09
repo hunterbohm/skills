@@ -1,6 +1,6 @@
 # Leads — Creating Qualified Demand
 
-Use this guide when too few right-fit prospects enter the sales process. It is a paraphrased operating guide. Retrieve attribution from `references/evidence/leads.md`.
+Use this guide when too few right-fit prospects enter the sales process. It is a paraphrased operating guide.
 
 ## Define the output
 

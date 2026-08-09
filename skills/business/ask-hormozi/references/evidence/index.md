@@ -1,10 +1,10 @@
 <!-- GENERATED — do not hand-edit.
      Source: hunterbohm/hormozi-glossary glossary.yml
-     Revision: b385873d66c75e31d6625cb49e217d0231f1169c (2026-07-13)
+     Revision: 86977294ba0a92ab2794d540684a95d5bb6e8a66 (2026-08-08)
      Exact excerpts are normalized contiguous transcript matches, capped at 20 words.
      Other entries are explicitly paraphrase-only or citation-only. -->
 
-# Hormozi Evidence Index (243 concepts)
+# Hormozi Evidence Index (267 concepts)
 
 Use this only to locate a concept, then open the matching evidence slice.
 
@@ -83,7 +83,6 @@ Use this only to locate a concept, then open the matching evidence slice.
 - **Dream Outcome** — The gap between where the customer is now and the ideal future they fantasize about.
 - **Effort & Sacrifice** — Everything the customer has to do or give up to get the result.
 - **Grand Slam Offer** — An offer so good and so unlike anything else that comparing it to competitors is impossible.
-- **Menu Upsell** — A pricing-menu tactic where an intentionally expensive option makes the core offer feel cheaper and easier to buy.
 - **Niche Slap** — Forcing an entrepreneur who is running too many things at once to pick exactly one niche, because any of them could work but none will work unless only one is chosen.
 - **Perceived Likelihood of Achievement** — How certain the buyer feels that your thing will actually work for them.
 - **Price-Value Discrepancy (Charge What It's Worth)** — Charge based on the value the buyer gets, not your costs - and being the most expensive is an advantage, being second-cheapest never is.
@@ -137,22 +136,47 @@ Use this only to locate a concept, then open the matching evidence slice.
 - **Whisper, Tease, Shout** — A three-phase launch sequence: hint quietly, then reveal, then announce loudly on launch day.
 
 ## Money Models → `money-models.md`
+- **100 Ways, Not 100 Products** — Grow the money model by finding more ways to offer what you already sell — not by adding products — and fill genuine gaps with affiliate offers.
+- **Anchor Upsell** — Present a premium option 5-10x the price first; after the gasp, present your main offer, which now reads as a great deal — and some buyers take the premium anyway.
 - **Attraction Offer** — The first, low-risk offer whose only job is to turn a cold stranger into a paying customer.
+- **BAMFAM (Book A Meeting From A Meeting)** — Never end a customer interaction without booking the next one — every meeting or call is an opportunity to make another offer.
+- **Burger, Fries & Soda Method** — The book's illustration that upsells, not the front-end offer, carry the profit — a $0.25-profit burger becomes $3.00 profit through fries, drink, and supersize upsells.
+- **Buy X Get Y Free Offer** — Restructure a discount into free items — sell one unit at the multi-unit price and give the extra units away free, because free out-pulls the equivalent percentage discount.
 - **Client-Financed Acquisition (CFA)** — Making a new customer's early gross profit repay their fully loaded acquisition cost, so growth can fund itself.
 - **Continuity** — An offer that charges ongoing money for ongoing value — recurring revenue you sell once and get paid for repeatedly.
+- **Continuity Bonus Offer** — Get people to start recurring billing by attaching a sign-up-today bonus worth more than the first continuity payment.
+- **Continuity Discount Offer** — Give free time or product away in exchange for a longer purchase commitment, applied one of four ways: up front, at the end, evenly spread, or after the first payment or two.
 - **Customer Acquisition Cost (CAC)** — The full cost — ads plus sales — to turn a prospect into one paying customer.
+- **Decoy Offer** — Advertise a free or cheap simple version to generate leads, then present it side-by-side with a far more valuable premium offer — either choice makes you a customer.
 - **Downsell** — The alternative offer you make after a customer says 'no,' reshaped to fit their budget or commitment.
+- **Feature Downsell** — Lower the price by changing what the customer gets — cut quantity, quality, or optional components, then re-offer.
+- **Free vs. Discount Continuum** — Every attraction offer sits on a continuum from free (100% off, highest demand) to full price (0% off, lowest demand), and free and discount framings are interchangeable.
+- **Gift Card Play** — Sell gift cards at 90%+ off (for example $200 for $20), limited to two per person and usable only on other people, turning customers into paid referrers.
+- **Giveaway Offer** — Advertise a chance to win a big prize in exchange for contact info, pick one winner, then offer everyone else the prize (or a near-version) at a discount.
+- **Good Money Model vs. $100M Money Model** — A good money model makes more 30-day profit from a customer than it costs to get and service them; a $100M money model makes more profit from one customer than it costs to get and service many.
 - **Gross Profit (as Hormozi uses it)** — What's left from a sale after only the cost to make and deliver it — explicitly not net profit or revenue.
 - **Lifetime Gross Profit (LTGP)** — The total gross profit one customer produces over their whole relationship with you — the real reinvestable cash, not revenue or LTV.
 - **LTGP:CAC Ratio** — How many dollars of lifetime gross profit you earn per dollar spent acquiring a customer — the health check for a business model.
+- **Menu Upsell** — A four-tactic upsell system for multi-option businesses: Unsell what they don't need, Prescribe what they do, offer an A/B preference choice, and close with the card on file.
 - **Money Model** — A deliberate, pre-planned sequence of offers that gets a customer's acquisition cost back fast — not a single sale.
 - **Nuisance Businesses** — Businesses customers know they should use but keep deprioritizing — reputation maintenance, SEO, etc.
+- **Pay Less Now or Pay More Later Offer** — Let people start free and be billed full price later unless they cancel, then immediately offer a 20-50% discounted pay-now option with bonuses.
 - **Payback Period (30-Day Rule)** — How long it takes to earn back, in gross profit, what you spent to acquire a customer.
+- **Payment Plan Downsell** — Downsell the same product at the same total price by changing how they pay — a seven-step ladder from pay-in-full rewards down to a free trial.
+- **Rollover Upsell** — Credit some or all of a customer's previous purchases toward a more expensive next offer, structured around who to target, what to sell, and how to apply the credit.
 - **Size of the Pie Fallacy** — The false belief that a competitor entering your channel shrinks your share of a fixed market.
 - **Smash and Grab Businesses** — Pure media-arbitrage businesses that spike fast, have no brand or delivery moat, and collapse when the arbitrage closes.
 - **The 30-Day 2x CAC Rule** — Aim for a new customer's first-30-day gross profit to exceed twice their fully loaded customer-acquisition cost.
+- **The Classic Upsell** — Offer the solution to the customer's next problem the moment they become aware of it — the you-can't-have-X-without-Y structure.
+- **The Economist Play** — To sell a bundle, add a decoy middle option priced the same as the bundle, making the bundle the obviously rational choice.
+- **The Four Types of Offers** — A money model combines four offer types — Attraction, Upsell, Downsell, and Continuity — each doing a different job in the sequence.
 - **The Pie Equation** — Every business grows by only three levers: more customers, bigger transactions, or more purchases over time.
+- **The Rules of Downselling** — Hormozi's guardrails for downsells — they said no to this offer not all offers; downsells are trades; personalize don't pressure; and never drop price just to close.
+- **Three Stages of a Money Model** — Money models are built in three stages — Stage I Get Cash (Attraction), Stage II Get More Cash (Upsells and Downsells), Stage III Get the Most Cash (Continuity) — one offer at a time.
+- **Trial With Penalty** — A free trial where the customer only pays if they fail to meet your terms — the mirror image of Win Your Money Back.
 - **Upsell** — The offer that solves the new problem created by the customer's first purchase.
+- **Waived Fee Offer** — Charge a large startup fee (3-5x the monthly rate) on month-to-month plans, but waive it entirely for customers who commit to a term — payable if they cancel early.
+- **Win Your Money Back Offer** — An attraction offer where the customer pays up front and gets the money back (as cash or store credit) if they hit a goal you set — based on results, actions, or both.
 
 ## Sales → `sales.md`
 - **3A Framework (Acknowledge, Associate, Ask)** — Handle a prospect's objection by Acknowledging it, Associating it with good buyer behavior, then Asking a question.

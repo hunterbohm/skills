@@ -3,23 +3,23 @@
     "leads": 31,
     "meta": 19,
     "mindset": 64,
-    "money-models": 16,
-    "offers": 27,
+    "money-models": 41,
+    "offers": 26,
     "sales": 29,
     "scaling": 31,
     "wealth": 26
   },
   "evidence_counts": {
-    "book_or_source_citation": 20,
-    "exact_linked_excerpt": 111,
-    "paraphrase_only": 112
+    "book_or_source_citation": 44,
+    "exact_linked_excerpt": 112,
+    "paraphrase_only": 111
   },
   "schema_version": 1,
   "source": {
     "repository": "https://github.com/hunterbohm/hormozi-glossary",
-    "revision": "b385873d66c75e31d6625cb49e217d0231f1169c",
-    "revision_date": "2026-07-13",
-    "term_count": 243
+    "revision": "86977294ba0a92ab2794d540684a95d5bb6e8a66",
+    "revision_date": "2026-08-08",
+    "term_count": 267
   },
   "transcript_audit": {
     "file_count": 2032,
