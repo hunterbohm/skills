@@ -1,6 +1,6 @@
 # Mindset — Converting Feelings into Inputs
 
-Use this guide for fear, focus, motivation, learning, persistence, and decision questions. It is a paraphrased operating guide. Retrieve attribution from `references/evidence/mindset.md`; use `references/evidence/meta.md` for a named decision or learning method.
+Use this guide for fear, focus, motivation, learning, persistence, and decision questions. It is a paraphrased operating guide.
 
 ## Translate the feeling
 

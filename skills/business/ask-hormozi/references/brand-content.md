@@ -1,6 +1,6 @@
 # Brand and Content — Building Compounding Demand
 
-Use this guide when content, audience, reputation, or personal-versus-company brand is the primary question. It is a paraphrased operating guide. Retrieve attribution from `references/evidence/leads.md` and add `references/evidence/sales.md` only for influence or sales-belief claims.
+Use this guide when content, audience, reputation, or personal-versus-company brand is the primary question. It is a paraphrased operating guide.
 
 ## Choose the job
 
