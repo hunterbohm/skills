@@ -1,6 +1,6 @@
 # Wealth and Worldview — Ownership, Cash Flow, and Time Horizon
 
-Use this guide when the user asks about Hormozi's public wealth philosophy, ownership, investing priorities, selling a company, reputation, or long-term games. It is a paraphrased operating guide. Retrieve attribution from `references/evidence/wealth-worldview.md`.
+Use this guide when the user asks about Hormozi's public wealth philosophy, ownership, investing priorities, selling a company, reputation, or long-term games. It is a paraphrased operating guide.
 
 This is a worldview translator, not personalized investment advice. Do not turn general business philosophy into a recommendation to buy, sell, borrow, concentrate, or avoid diversification without the user's financial facts and appropriate professional review.
 

@@ -1,6 +1,6 @@
 <!-- GENERATED — do not hand-edit.
      Source: hunterbohm/hormozi-glossary glossary.yml
-     Revision: b385873d66c75e31d6625cb49e217d0231f1169c (2026-07-13)
+     Revision: 86977294ba0a92ab2794d540684a95d5bb6e8a66 (2026-08-08)
      Exact excerpts are normalized contiguous transcript matches, capped at 20 words.
      Other entries are explicitly paraphrase-only or citation-only. -->
 
@@ -18,15 +18,15 @@ Your close rate reveals how underpriced you are: the higher you close, the more 
 
 ### Convenience & Speed as Value Levers  _(aka Fast Beats Free, Speed and Convenience)_
 Making something faster (speed) and easier (convenience) raises its value even when the result is unchanged.
-**Source:** [Aure's Notes summary](https://auresnotes.com/summary-100m-offers-alex-hormozi/) · paraphrase only; no exact linked excerpt shipped · confidence: high
+**Source:** The Game w/ Alex Hormozi — Ep 540: The Value of Experience in Entrepreneurship · paraphrase only; no exact linked excerpt shipped · confidence: high
 
 ### Create Flow, Monetize Flow, Add Friction  _(aka Create Flow Monetize Flow Add Friction)_
 First generate demand, then sell into it, then quietly reduce what you have to deliver.
-**Source:** [Aure's Notes summary](https://auresnotes.com/summary-100m-offers-alex-hormozi/) · paraphrase only; no exact linked excerpt shipped · confidence: medium
+**Source:** The Game w/ Alex Hormozi — Ep 264: Generate Flow. Monetize Flow. Add Friction · paraphrase only; no exact linked excerpt shipped · confidence: high
 
 ### Divergent vs Convergent Problem-Solving  _(aka Divergent Thinking, Convergent Thinking)_
 Convergent problems have one right answer; divergent problems have infinite good answers - and pay far more.
-**Source:** [Aure's Notes summary](https://auresnotes.com/summary-100m-offers-alex-hormozi/) · paraphrase only; no exact linked excerpt shipped · confidence: high
+**Source:** The Game w/ Alex Hormozi — Ep 509: Restructuring Education & Teaching Practical Life Skills (on The Iced Coffee Hour) Pt.1 · paraphrase only; no exact linked excerpt shipped · confidence: high
 
 ### Dream Outcome  _(aka Dream Result)_
 The gap between where the customer is now and the ideal future they fantasize about.
@@ -39,10 +39,6 @@ Everything the customer has to do or give up to get the result.
 ### Grand Slam Offer  _(aka GSO)_
 An offer so good and so unlike anything else that comparing it to competitors is impossible.
 **Book/source citation:** $100M Offers (2021), Ch. 2 & Ch. 3 · cited, not excerpted · confidence: high
-
-### Menu Upsell  _(aka Menu Anchor, Pricing menu anchor)_
-A pricing-menu tactic where an intentionally expensive option makes the core offer feel cheaper and easier to buy.
-**Source:** The Game — Quick Tips on Pricing to Make More Money This Week | Ep 737 · paraphrase only; no exact linked excerpt shipped · confidence: medium
 
 ### Niche Slap  _(aka Niche slapping, Niche slapping people)_
 Forcing an entrepreneur who is running too many things at once to pick exactly one niche, because any of them could work but none will work unless only one is chosen.
@@ -60,7 +56,7 @@ Charge based on the value the buyer gets, not your costs - and being the most ex
 ### Scarcity
 Limiting the QUANTITY available so people want it more and buy now.
 Components: Limited supply of product; Limited supply of bonuses; Never available again
-**Source:** [Aure's Notes summary](https://auresnotes.com/summary-100m-offers-alex-hormozi/) · paraphrase only; no exact linked excerpt shipped · confidence: high
+**Source:** The Game w/ Alex Hormozi — Ep 451: Scarcity, Guarantees & the Cohort Method (with Vince Del Monte) Pt.1 · paraphrase only; no exact linked excerpt shipped · confidence: high
 
 ### Sell Your Soul Problem
 Front-loading so much free value to attract customers that the business can never profitably deliver.
@@ -69,7 +65,7 @@ Front-loading so much free value to attract customers that the business can neve
 
 ### Solution Delivery Vehicles (Delivery Cheat Codes)  _(aka Delivery Cheat Codes, Delivery Vehicles)_
 A checklist of ways to deliver each solution so you can maximize value without maximizing cost.
-**Book/source citation:** $100M Offers (2021), Ch. 10 Trim & Stack · cited, not excerpted · confidence: medium
+**Book/source citation:** $100M Offers (2021), Ch. 10 Trim & Stack · cited, not excerpted · confidence: high
 
 ### Splintering Your Offer
 Peel one piece off your full offer and make an insane discount on it to use as a front-end lead magnet.
@@ -78,7 +74,7 @@ Peel one piece off your full offer and make an insane discount on it to use as a
 
 ### The Commodity Problem (Commoditization)  _(aka Commoditization, Value-Driven vs Price-Driven)_
 If your thing can be compared to competitors, you're a commodity and forced to compete on price - so become uncomparable.
-**Source:** [Aure's Notes summary](https://auresnotes.com/summary-100m-offers-alex-hormozi/) · paraphrase only; no exact linked excerpt shipped · confidence: high
+**Source:** The Game w/ Alex Hormozi — Ep 596: The Game — No Half Measures · paraphrase only; no exact linked excerpt shipped · confidence: high
 
 ### The Guarantee (Risk Reversal) Taxonomy  _(aka Guarantees, Risk Reversal)_
 Four ways to reverse the buyer's risk: unconditional, conditional, anti-guarantee, and implied/performance.
@@ -114,11 +110,11 @@ Components: Massive pain; Purchasing power; Easy to target; Growing
 A formula for how much people want something: big dream and high certainty on top, low time and low effort on the bottom.
 **Formula:** `Value = (Dream Outcome x Perceived Likelihood of Achievement) / (Time Delay x Effort & Sacrifice)`
 Components: Dream Outcome; Perceived Likelihood of Achievement; Time Delay; Effort & Sacrifice
-**Source:** [Aure's Notes summary](https://auresnotes.com/summary-100m-offers-alex-hormozi/) · paraphrase only; no exact linked excerpt shipped · confidence: high
+**Source:** The Game w/ Alex Hormozi — Ep 181: The Value Equation · paraphrase only; no exact linked excerpt shipped · confidence: high
 
 ### Time Delay  _(aka Time to Result, Speed)_
 How long the buyer must wait between paying and seeing the result.
-**Source:** [Aure's Notes summary](https://auresnotes.com/summary-100m-offers-alex-hormozi/) · paraphrase only; no exact linked excerpt shipped · confidence: high
+**Source:** The Game w/ Alex Hormozi — Ep 548: The Game — Life, Death, and the Game of Business (on Diary Of A CEO) Pt.2 - Apr. ‘23 · paraphrase only; no exact linked excerpt shipped · confidence: high
 
 ### Urgency
 Using deadlines and time limits to make people act now instead of later.

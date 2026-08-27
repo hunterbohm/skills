@@ -1,6 +1,6 @@
 ---
 name: workflow-audit
-description: "Audit a business's recurring workflows from connected sources, in a durable audit workspace that compounds across runs. Use when an owner wants to know where work gets stuck, what to automate first, how to build a supervised agent workflow, or what changed since the last audit."
+description: "Audit recurring business workflows from connected sources. Use to find delays, choose automation work, or compare audit changes."
 ---
 
 # Workflow Audit

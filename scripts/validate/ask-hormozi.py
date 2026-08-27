@@ -66,15 +66,20 @@ def validate_evidence(errors: list[str]) -> None:
         fail(errors, f"evidence has {headings} terms; manifest differs")
     if dict(states) != manifest["evidence_counts"]:
         fail(errors, f"evidence states {dict(states)} differ from manifest")
-    if exact_domains != Counter({"youtube.com": 84, "rosetta.to": 27}):
+    if exact_domains != Counter({"youtube.com": 84, "rosetta.to": 27, "open.spotify.com": 1}):
         fail(errors, f"exact source-page mix changed: {dict(exact_domains)}")
-    if paraphrase_without_url != 21:
+    # 27, not 21: purging the secondary-summary URLs (Aure's Notes and friends)
+    # left those entries naming a primary source with no public link, which is
+    # honest provenance. A rise here is only acceptable for that reason.
+    if paraphrase_without_url != 27:
         fail(errors, f"title-only paraphrase count changed: {paraphrase_without_url}")
 
 def validate_frameworks(errors: list[str]) -> None:
     references = SKILL / "references"
+    # Operations docs, not paraphrased framework guides: they carry procedure
+    # and command examples, never Hormozi attributions.
     for path in sorted(references.glob("*.md")):
-        if path.name == "live-research.md":
+        if path.name in {"live-research.md", "ledger.md"}:
             continue
         text = path.read_text(encoding="utf-8")
         if re.search(r"(?m)^> ", text):
@@ -112,7 +117,9 @@ def main() -> None:
     for required in required_process:
         if required not in skill_text:
             fail(errors, f"SKILL.md missing process contract: {required}")
-    for branch in ("Explain", "Advise", "Audit", "Execute", "Verify"):
+    # Four branches: the skill diagnoses and prescribes. Producing the artifact
+    # ("Execute") was retired — an artifact request is an Advise request.
+    for branch in ("Explain", "Advise", "Audit", "Verify"):
         if f"**{branch}:**" not in skill_text:
             fail(errors, f"SKILL.md missing branch: {branch}")
     if skill_text.count("Completion criterion:") != 6:

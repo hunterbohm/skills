@@ -1,6 +1,6 @@
 # Sales — Belief, Diagnosis, and Process
 
-Use this guide when qualified opportunities exist but too few buy, attend, or complete follow-up. It is a paraphrased operating guide. Retrieve attribution from `references/evidence/sales.md`.
+Use this guide when qualified opportunities exist but too few buy, attend, or complete follow-up. It is a paraphrased operating guide.
 
 ## Diagnose before prescribing
 

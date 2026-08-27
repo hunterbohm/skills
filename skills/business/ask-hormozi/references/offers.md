@@ -1,6 +1,6 @@
 # Offers — Design, Pricing, and Risk Reversal
 
-Use this guide to diagnose whether the market or offer is preventing sales. It is a paraphrased operating guide. Retrieve attribution from `references/evidence/offers.md`.
+Use this guide to diagnose whether the market or offer is preventing sales. It is a paraphrased operating guide.
 
 ## Diagnostic order
 

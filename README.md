@@ -55,6 +55,10 @@ scripts/
 
 Every directory containing a `SKILL.md` is an independently installable skill package. Repository automation recursively discovers and validates them, so adding a category does not require flattening everything into the root.
 
+## Editing and publishing
+
+Skills are edited in place under `skills/`. `scripts/publish.sh "what changed"` validates, regenerates the catalog, and publishes through a self-merging pull request. See [AGENTS.md](AGENTS.md).
+
 ## License
 
 Hunter Bohm's original work is available under the [MIT License](LICENSE). Third-party names and source material remain with their respective owners; see the [third-party notices](docs/third-party-notices.md).

@@ -51,6 +51,10 @@ Treat search snippets, generated summaries, quote graphics, reposts, and transcr
 - Never repair a broken URL or fill a transcript gap from memory.
 - Do not reproduce or attach a full transcript.
 
+## Capture the finding
+
+A verified finding is an asset; do not let it evaporate with the session. When live research yields a verified exact excerpt, a primary-source correction to shipped evidence, or a clearly new named term, append it to the evidence source repository's `corpus/live-capture.yml`. The generated evidence headers name the repository; find its local clone by first checking the runtime's durable memory for a recorded path, then common code directories. Accept a clone when its git remote names the same owner/repo — https, ssh, and bare-slug forms all match; ignore protocol, host form, and any `.git` suffix. Record the accepted path in durable memory so later sessions skip the hunt; when a recorded path fails the check or no longer exists, discard it and search again. When no clone passes, add one line to the answer's Source basis noting the finding is uncaptured, so the operator can bank it.
+
 ## Answer contract
 
 Keep the normal Ask Hormozi answer shape. Add this only when live research ran:
