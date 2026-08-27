@@ -1,6 +1,6 @@
 # Scaling — Constraints, Retention, and Team
 
-Use this guide when demand exists and the business must identify what breaks next. It is a paraphrased operating guide. Retrieve attribution from `references/evidence/scaling.md`.
+Use this guide when demand exists and the business must identify what breaks next. It is a paraphrased operating guide.
 
 ## Find the constraint
 

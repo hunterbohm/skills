@@ -8,7 +8,7 @@ Install any skill globally with its command below. Run `npx skills@latest add hu
 
 ### [Ask Hormozi](../skills/business/ask-hormozi/SKILL.md)
 
-Apply Alex Hormozi's published business frameworks with constraint-first diagnosis and source-backed attribution. Use when the user asks what a Hormozi term or framework means; what Hormozi would do in a business situation; wants an offer, funnel, script, numbers, or draft analyzed or produced through his frameworks; or wants a Hormozi attribution or current position verified against public sources.
+Apply Alex Hormozi's published frameworks to offers, funnels, scripts, or business decisions. Use for source-checked advice in his methods.
 
 **Compatibility:** Agent Skills-compatible clients
 
@@ -18,7 +18,7 @@ npx skills@latest add hunterbohm/skills --skill ask-hormozi --global
 
 ### [Workflow Audit](../skills/business/workflow-audit/SKILL.md)
 
-Audit a business's recurring workflows from connected sources, in a durable audit workspace that compounds across runs. Use when an owner wants to know where work gets stuck, what to automate first, how to build a supervised agent workflow, or what changed since the last audit.
+Audit recurring business workflows from connected sources. Use to find delays, choose automation work, or compare audit changes.
 
 **Compatibility:** Agent Skills-compatible clients
 
@@ -28,7 +28,7 @@ npx skills@latest add hunterbohm/skills --skill workflow-audit --global
 
 ### [Workflow Build](../skills/business/workflow-build/SKILL.md)
 
-Build, prove, and report on workflows specced by the workflow-audit skill. Use when the workflow-audit skill hands off a confirmed workflow, when the owner asks to build or implement a specced workflow, or when the owner asks for run history or what an automation has returned.
+Build and verify a workflow approved through `workflow-audit`. Use for implementation, run history, and results.
 
 **Compatibility:** Agent Skills-compatible clients
 
@@ -40,7 +40,7 @@ npx skills@latest add hunterbohm/skills --skill workflow-build --global
 
 ### [Project Control](../skills/project-management/project-control/SKILL.md)
 
-Project lens that builds an adaptive Codex App visualization from the active project's real sources. Use for project orientation, planning, verification, scenario exploration, or refresh.
+Build an adaptive view from an active project's real sources. Use for project status, planning, verification, scenarios, or refresh.
 
 **Compatibility:** Codex App only
 

@@ -1,6 +1,6 @@
 ---
 name: workflow-build
-description: "Build, prove, and report on workflows specced by the workflow-audit skill. Use when the workflow-audit skill hands off a confirmed workflow, when the owner asks to build or implement a specced workflow, or when the owner asks for run history or what an automation has returned."
+description: "Build and verify a workflow approved through `workflow-audit`. Use for implementation, run history, and results."
 ---
 
 # Workflow Build

@@ -1,6 +1,6 @@
 ---
 name: project-control
-description: Project lens that builds an adaptive Codex App visualization from the active project's real sources. Use for project orientation, planning, verification, scenario exploration, or refresh.
+description: "Build an adaptive view from an active project's real sources. Use for project status, planning, verification, scenarios, or refresh."
 ---
 
 # Project Control
