@@ -1,72 +1,59 @@
 # Workspace contract
 
-The shared state contract for audit workspaces. The workflow-audit and
-workflow-build skills both read and write against this file; no other file
-defines these shapes. Load it before reading or writing any workspace state.
+The shared contract for audit workspaces, read and written by `workflow-audit` and `workflow-build`.
 
 ## Layout
 
 ```text
 <audit-root>/<business-slug>/
-├── state.json                     # the ledger — memory across runs
+├── state.json                     # the ledger: memory across runs
 ├── workflow-audit.md              # living audit document
 ├── owner-summary.md               # one-page owner view, regenerated every run
 ├── specs/
-│   └── <n>-<slug>-build-spec.md   # n = the workflow's ledger order
+│   └── <n>-<slug>-build-spec.md   # n = the workflow's 1-based position in inventory
 └── workflows/
-    └── <n>-<slug>/                # built runner + run log
+    └── <n>-<slug>/
+        ├── implementation.md      # where the build lives and how to run it
+        └── runs.jsonl             # run log, one line per run
 ```
 
-Ask the owner once where `<audit-root>` lives, and record the answer where the
-runtime will find it again — the invoking project's instruction file or the
-agent's memory — so later runs do not re-ask.
+Ask the owner once where `<audit-root>` lives. Record the answer in the agent's instruction file or memory, so later runs do not ask again.
 
-## Ledger — state.json
+## Ledger: state.json
 
 ```json
 {
   "business": "",
   "source_map": [{"source": "", "authority": "", "access": "", "boundary": "", "last_verified": ""}],
   "inventory": [{"name": "", "evidence": "observed|owner-reported|inferred",
-                 "status": "candidate|designed|built|proven|enabled|reliable|rejected",
+                 "status": "candidate|designed|built|proven|live|rejected",
                  "baseline": {"runs_per_month": null, "hours_per_run": null, "hourly_value": null, "source": ""},
                  "notes": ""}],
   "first_workflow": "",
   "runner_ups": [],
-  "corrections": [{"date": "", "rule": ""}],
-  "runs": [{"date": "", "mode": "first|resume|build|prove|report", "changes": ""}]
+  "corrections": [{"date": "", "rule": "", "superseded_by": ""}],
+  "runs": [{"date": "", "mode": "first|resume|build|prove|live|report", "changes": ""}]
 }
 ```
 
-`corrections` holds dated standing rules and recorded owner decisions: style
-and scope corrections captured on any run, build deferrals, and trigger
-activation instructions. Entries are never deleted; superseded ones are
-marked in place.
+`corrections` holds dated standing rules and recorded owner decisions: style and scope corrections captured on any run, build deferrals, and go-live instructions. It is append-only. To supersede an entry, set its `superseded_by` to the date of the new one.
 
-## Workflow states
+## Ladder
 
-`candidate → designed → built → proven → enabled → reliable`, plus
-`rejected`. A status moves — in either direction — only on this evidence:
+The ladder is `candidate → designed → built → proven → live`, plus `rejected`. A status moves up only on this evidence:
 
-- **candidate** — in the inventory, not chosen.
-- **rejected** — ruled out by the owner or a failed confirmation; the reason
-  stays in `notes`.
-- **designed** — a confirmed build spec exists in `specs/`.
-- **built** — the fixture passes end to end with the act step in dry-run.
-- **proven** — one real, owner-approved run passed the spec's acceptance
-  test.
-- **enabled** — the production trigger is active, on an explicit owner
-  instruction recorded in `corrections`; requires a prior `proven`
-  acceptance run.
-- **reliable** — `runs.jsonl` shows repeated verified real runs across an
-  observation window the owner agreed to.
+- **candidate.** In the inventory, not chosen.
+- **rejected.** Ruled out by the owner or by a failed confirmation. The reason stays in `notes`.
+- **designed.** A build spec for the owner-confirmed workflow exists in `specs/`.
+- **built.** The fixture passes end to end with the act stage in dry-run.
+- **proven.** One real run, cleared at the gate by the named approver, passed the spec's acceptance run.
+- **live.** The production trigger is active, on an explicit owner instruction recorded in `corrections`. Requires a prior `proven` run.
 
-A workflow "has reached `proven`" when its status is `proven`, `enabled`, or
-`reliable` — later rungs never un-prove it.
+A status moves down when its evidence no longer holds. A failed acceptance run moves the workflow to `designed`. A failed real run after that moves `proven` to `built`, or to `designed` if the spec changes. A deactivated trigger moves `live` to `proven`. A workflow "has reached `proven`" when its status is `proven` or `live`.
 
-## Run log — workflows/<n>-<slug>/runs.jsonl
+## Run log: workflows/<n>-<slug>/runs.jsonl
 
-One JSON line per run, appended only by the runner's log stage:
+The runtime's log stage appends one JSON line per run. If the runtime cannot append to it, `implementation.md` names the runtime's external run records, and the report branch imports them by `run_id`.
 
 ```json
 {"run_id": "", "idempotency_key": "", "ts": "", "mode": "fixture|real",
@@ -75,17 +62,23 @@ One JSON line per run, appended only by the runner's log stage:
  "notes": ""}
 ```
 
-`verified` is `true`, `false`, or `"pending"` — never assumed. Log source
-references, never raw sensitive content and never secrets.
+`verified` comes from the read-back: `true`, `false`, or `"pending"`. Log source references and secret names only.
 
-## Realized value
+## Value formulas
+
+Baseline cost, from the owner's own numbers:
 
 ```text
-returned hours = verified real runs × baseline hours_per_run
-returned value = returned hours × baseline hourly_value   (only when stated)
-adoption gap   = baseline runs_per_month vs actual run rate
+hours/month        = runs/month × hours/run
+annual labor value = hours/month × 12 × stated hourly value
 ```
 
-Every figure is an estimate from the owner's own baseline numbers, not a
-measurement. A live workflow with an adoption gap is a finding, not a
-success.
+Realized value, from the run log against the baseline:
+
+```text
+realized hours = verified real runs × baseline hours_per_run
+realized value = realized hours × baseline hourly_value   (only when stated)
+adoption gap   = baseline runs_per_month minus verified real runs per month, from runs.jsonl
+```
+
+Count only verified real runs. If `implementation.md` names external run records, import them into `runs.jsonl` by `run_id` before you count. Every figure is an estimate from the owner's own baseline numbers, not a measurement. A live workflow with an adoption gap is a finding, not a success.
