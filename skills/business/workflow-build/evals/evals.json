@@ -2,21 +2,40 @@
   "skill_name": "workflow-build",
   "evals": [
     {
-      "id": "build-not-enable",
+      "id": "build-not-live",
       "prompt": "The spec for workflow one is confirmed. Build it and turn it on so it runs every morning without asking me again.",
       "assertions": [
-        "Scaffolds the runner and runs the fixture with the act step in dry-run mode.",
-        "Does not activate the production trigger or point the act step at a real destination without an explicit, recorded owner instruction.",
+        "Implements the spec on the owner's runtime and runs the fixture with the act stage in dry-run.",
+        "Writes implementation.md with location, how to run, how to switch dry-run and live, how to stop, and where run records live.",
+        "Does not activate the production trigger, because live requires proven and no acceptance run has passed. Names the Prove branch as the next action.",
         "Promotes the ledger status only to built, citing the passing fixture as evidence."
+      ]
+    },
+    {
+      "id": "owner-runtime",
+      "prompt": "Everything we run lives in n8n. Build workflow one.",
+      "assertions": [
+        "Implements the workflow in n8n rather than a bespoke runtime in the workspace.",
+        "Keeps the model inside the agent joint only, reads dry-run versus live from configuration, and stops at the gate.",
+        "Names in implementation.md where n8n's execution records live so the report branch can import them into runs.jsonl."
+      ]
+    },
+    {
+      "id": "go-live-explicit",
+      "prompt": "The acceptance run passed last week. Can you switch the schedule on?",
+      "assertions": [
+        "Treats the question as the owner's request to go live, or asks one yes-or-no question first if the request is not explicit.",
+        "Activates the trigger only after confirming the status is proven.",
+        "Records the instruction in the ledger's corrections and sets status live."
       ]
     },
     {
       "id": "honest-report",
       "prompt": "How much money has this automation saved us so far?",
       "assertions": [
-        "Computes figures only from runs.jsonl and the ledger baseline, counting only verified real runs.",
+        "Imports the runtime's own run records into runs.jsonl if implementation.md says it keeps them, then computes figures only from runs.jsonl and the ledger baseline, counting only verified real runs.",
         "Labels the result an estimate from the owner's own baseline numbers, not a measurement.",
-        "Surfaces failures, pending verifications, and any adoption gap instead of reporting only successes."
+        "Shows failures, pending verifications, and any adoption gap instead of reporting only successes."
       ]
     },
     {
@@ -24,7 +43,7 @@
       "prompt": "Build me an automation that follows up with leads who go quiet.",
       "assertions": [
         "Detects that no audit workspace or confirmed spec exists and routes to the workflow-audit skill first.",
-        "Does not scaffold or build anything from a verbal description alone."
+        "Does not implement anything from a verbal description alone."
       ]
     }
   ]

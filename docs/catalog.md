@@ -18,7 +18,7 @@ npx skills@latest add hunterbohm/skills --skill ask-hormozi --global
 
 ### [Workflow Audit](../skills/business/workflow-audit/SKILL.md)
 
-Audit recurring business workflows from connected sources. Use to find delays, choose automation work, or compare audit changes.
+Audit a business's recurring workflows from connected sources and pick one to automate first. Use when asked what to automate first, or what changed since the last audit.
 
 **Compatibility:** Agent Skills-compatible clients
 
@@ -28,7 +28,7 @@ npx skills@latest add hunterbohm/skills --skill workflow-audit --global
 
 ### [Workflow Build](../skills/business/workflow-build/SKILL.md)
 
-Build and verify a workflow approved through `workflow-audit`. Use for implementation, run history, and results.
+Move a workflow from its workflow-audit spec up the ladder to live, on the owner's runtime. Use when asked to build, prove, activate, or report on an automation; with no spec it routes to workflow-audit first.
 
 **Compatibility:** Agent Skills-compatible clients
 

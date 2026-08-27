@@ -14,6 +14,9 @@ skills here. Nothing upstream generates them.
   Validation fails on drift.
 - No private names, machine paths, or credentials. Users choose their own
   paths; the skill asks once.
+- `CONTEXT.md` is the glossary for the workflow pair. `docs/adr/` records
+  design decisions. `docs/` also holds public reads that are not part of any
+  package.
 
 ## Publish
 

@@ -2,7 +2,7 @@
 
 This is not a product pitch or a promise that an agent can run an agency by itself. It is the operating model I would use if Claude or another capable agent already had access to the systems where an agency works.
 
-(This guide is a standalone, owner-facing leave-behind. Where its wording differs from the skill's `SKILL.md`, `references/build-spec.md`, or `references/workspace-contract.md`, those files are canonical.)
+(This guide is a standalone read for a business owner. Where its wording differs from the `workflow-audit` and `workflow-build` skills under `../skills/business/`, the skills are canonical.)
 
 The goal is simple: reduce the amount of context gathering, coordination, and follow-up that still depends on the founder, while keeping judgment and outbound communication with the people responsible for the client relationship.
 
