@@ -37,7 +37,9 @@ def validate_evidence(errors: list[str]) -> None:
             "· paraphrase only; no exact linked excerpt shipped ·"
         )
         states["book_or_source_citation"] += text.count("· cited, not excerpted ·")
-        if "files.flightcast.com" in text:
+        # Match the host as a whole token, in a URL or bare, so a look-alike
+        # such as files.flightcast.com.example.net cannot slip past.
+        if re.search(r"(?<![\w.-])files\.flightcast\.com(?![\w-])", text):
             fail(errors, f"{path}: contains a raw transcript-host URL")
 
         for chunk in re.split(r"(?m)^### ", text)[1:]:

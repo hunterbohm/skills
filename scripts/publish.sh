@@ -49,9 +49,23 @@ url="$(gh pr view "$branch" --json url --jq .url)"
 echo "pull request open: $url"
 echo "waiting for the validate check..."
 
-if ! gh pr checks "$branch" --watch --fail-fast >/dev/null; then
-  echo "validation FAILED on GitHub: $url" >&2
-  echo "fix the problem, then run scripts/publish.sh again (you are on $branch)" >&2
+# Only the required "validate" check gates the merge. Other checks (CodeQL)
+# are advisory and must not fail a publish; read them on the pull request.
+state=""
+for _ in $(seq 1 120); do
+  state="$(gh pr checks "$branch" --json name,state \
+    --jq '.[] | select(.name=="validate") | .state' 2>/dev/null || true)"
+  case "$state" in
+    SUCCESS) break ;;
+    FAILURE|ERROR|CANCELLED)
+      echo "validation FAILED on GitHub: $url" >&2
+      echo "fix the problem, then run scripts/publish.sh again (you are on $branch)" >&2
+      exit 1 ;;
+  esac
+  sleep 5
+done
+if [ "$state" != "SUCCESS" ]; then
+  echo "timed out waiting for the validate check: $url" >&2
   exit 1
 fi
 for _ in $(seq 1 30); do
