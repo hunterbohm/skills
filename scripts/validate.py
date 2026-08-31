@@ -30,6 +30,7 @@ ALLOWED_TOP_LEVEL = {
     "agents",
     "assets",
     "evals",
+    "fixtures",
     "references",
     "scripts",
 }
@@ -74,6 +75,17 @@ def validate_openai_yaml(skill: pathlib.Path, check: Validation) -> None:
         check.require(
             25 <= len(short.group(1)) <= 64,
             f"{skill.name}: short_description must be 25-64 characters",
+        )
+    policy = re.search(r'^\s*allow_implicit_invocation:\s*(true|false)', text, re.MULTILINE)
+    if skill.name == "ops-audit":
+        check.require(
+            policy is not None and policy.group(1) == "false",
+            "ops-audit: openai.yaml must disable implicit invocation",
+        )
+    if skill.name == "ops-foundation":
+        check.require(
+            policy is not None and policy.group(1) == "true",
+            "ops-foundation: openai.yaml must allow model invocation",
         )
     if prompt:
         check.require(
@@ -130,11 +142,17 @@ def validate_skill(skill: pathlib.Path, check: Validation) -> None:
         return
     frontmatter = parse_frontmatter(skill_md, check)
     check.require(
-        set(frontmatter) == {"name", "description"},
-        f"{skill.name}: frontmatter must contain only name and description",
+        set(frontmatter) == {"name", "description"}
+        or (
+            skill.name == "ops-audit"
+            and set(frontmatter) == {"name", "description", "disable-model-invocation"}
+        ),
+        f"{skill.name}: frontmatter must contain only name and description (ops-audit also requires disable-model-invocation)",
     )
     check.require(frontmatter.get("name") == skill.name, f"{skill.name}: frontmatter name mismatch")
     check.require(bool(frontmatter.get("description")), f"{skill.name}: empty description")
+    if skill.name == "ops-audit":
+        check.require(frontmatter.get("disable-model-invocation") == "true", "ops-audit: must set disable-model-invocation: true")
 
     for path in skill.rglob("*"):
         check.require(not path.is_symlink(), f"{skill.name}: symlink is not allowed: {path}")

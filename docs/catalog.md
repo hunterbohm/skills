@@ -16,22 +16,22 @@ Apply Alex Hormozi's published frameworks to offers, funnels, scripts, or busine
 npx skills@latest add hunterbohm/skills --skill ask-hormozi --global
 ```
 
-### [Workflow Audit](../skills/business/workflow-audit/SKILL.md)
+### [Operations Audit](../skills/business/ops-audit/SKILL.md)
 
-Audit a business's recurring workflows from connected sources and pick one to automate first. Use when asked what to automate first, or what changed since the last audit.
+Diagnose operational work from consented evidence and render one offline roadmap. Use only when the owner explicitly invokes it.
 
 **Compatibility:** Agent Skills-compatible clients
 
 ```bash
-npx skills@latest add hunterbohm/skills --skill workflow-audit --global
+npx skills@latest add hunterbohm/skills --skill ops-audit --global
 ```
 
-### [Workflow Build](../skills/business/workflow-build/SKILL.md)
+### [Operations Foundation](../skills/business/ops-foundation/SKILL.md)
 
-Move a workflow from its workflow-audit spec up the ladder to live, on the owner's runtime. Use when asked to build, prove, activate, or report on an automation; with no spec it routes to workflow-audit first.
+Installs and operates an approved ops-audit roadmap handoff, or an already-installed ops-foundation workspace, on the owner's runtime.
 
 **Compatibility:** Agent Skills-compatible clients
 
 ```bash
-npx skills@latest add hunterbohm/skills --skill workflow-build --global
+npx skills@latest add hunterbohm/skills --skill ops-foundation --global
 ```
