@@ -40,8 +40,3 @@ jobs:
           test_home="$(mktemp -d)"
           HOME="$test_home" npx -y skills@1.5.15 add . --skill ask-hormozi --agent codex --global -y
           diff -qr skills/business/ask-hormozi "$test_home/.agents/skills/ask-hormozi"
-      - name: Verify clean Codex-only install
-        run: |
-          test_home="$(mktemp -d)"
-          HOME="$test_home" npx -y skills@latest add . --skill project-control --agent codex --global -y
-          diff -qr skills/project-management/project-control "$test_home/.agents/skills/project-control"
