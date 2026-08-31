@@ -1,155 +1,53 @@
-# Workflow audit and build
+# Operations audit and foundation
 
-Terms shared by the `workflow-audit` and `workflow-build` skills. One business, one workspace, one workflow at a time.
+Terms shared by the `ops-audit` and `ops-foundation` skills. One business, one workspace, and one approved first automation at a time.
 
 ## People
 
-**Owner**:
-The person who sponsors the audit and approves the workflow choice.
-_Avoid_: client, founder, sponsor, user
+**Owner**: The person in the chat who owns the business, accounts, and runtime.
 
-**Operator**:
-The person who runs the workflow by hand today and will correct the built one.
-_Avoid_: user, team member
+**Approver**: The named person who clears a consequential action at its gate.
 
-**Approver**:
-The named person who clears a consequential action at the gate.
-_Avoid_: reviewer, stakeholder
+## Audit
 
-**Customer**:
-A person or organization the business serves.
-_Avoid_: client, lead, account
+**Audit**: The explicit, consent-based diagnosis that produces one offline `roadmap.html`.
 
-## The audit
+**Roadmap**: The rendered owner-facing audit result, based on `roadmap.json`.
 
-**Workflow**:
-A recurring piece of work with a stable trigger, inputs, and output, seen across independent instances.
-_Avoid_: process, automation, play, system
+**Card**: One diagnosed time sink with evidence, causal path, existing coverage, intervention, proof, and verdict.
 
-**Audit**:
-The read-only survey that maps a business's workflows and chooses one to build.
-_Avoid_: assessment, discovery, roadmap
+**Evidence label**: The provenance of a claim: observed, owner-reported, or inferred.
 
-**First run**:
-The audit of a business that has no workspace yet.
-_Avoid_: initial audit, onboarding
+**First move**: The one roadmap action selected to reduce operational burden now.
 
-**Resume run**:
-An audit run on a business that already has a workspace. It diffs against the ledger.
-_Avoid_: re-audit, check-in, follow-up audit
+**First automation**: The approved card that ops-foundation may build. It can be absent only with a written reason.
 
-**Source map**:
-The list of systems that hold each kind of truth, with who may read and who may write each.
-_Avoid_: integrations, tool list, stack
+**Feedback**: A revision-safe accept, change, or reject request for a roadmap card.
 
-**Evidence label**:
-The provenance of a workflow claim: observed, owner-reported, or inferred.
-_Avoid_: confidence, source type
+## Workspace
 
-**Inventory**:
-The ledger's list of every workflow found, each with its evidence label, status, and baseline.
-_Avoid_: workflow map, catalog, list
+**Workspace**: The durable folder selected by the owner for one business.
 
-**Baseline**:
-The owner's own numbers for one workflow: runs per month, hours per run, hourly value.
-_Avoid_: estimate, ROI, savings
+**State**: The machine-readable audit and foundation record in `state.json`.
 
-**First workflow**:
-The one workflow chosen to build first.
-_Avoid_: pilot, MVP, quick win
+**Foundation**: The installed workspace map, rules, receipts, and operating contract that support the approved automation.
 
-**Runner-up**:
-A workflow that waits until the first workflow has reached proven.
-_Avoid_: backlog, phase two
+**Rule**: A concrete owner-approved lesson from a recorded failure, kept in `rules.md`.
 
-## The workspace
+**Receipt**: The record of a fixture, real run, activation, or report, including action and read-back evidence.
 
-**Audit root**:
-The folder the owner chose to hold every workspace. Written `<audit-root>` in paths.
-_Avoid_: base path, output directory
+## Implementation
 
-**Workspace**:
-The one durable folder per business that every run shares.
-_Avoid_: project, repo, output folder
+**Runtime**: The owner-chosen system that runs the automation.
 
-**Ledger**:
-The workspace's memory across runs: source map, inventory, statuses, corrections, run entries.
-_Avoid_: state, database, index
+**Workflow contract**: The implementation contract for the approved card: runtime, baseline, fixture, deterministic spine, idempotency basis, failure destination, and operating instructions.
 
-**Correction**:
-A dated standing rule or recorded owner decision that every later run applies.
-_Avoid_: feedback, note, preference
+**Deterministic spine**: The fixed sequence: trigger, collect, bounded agent joint, gate, act, verify, and log.
 
-**Owner summary**:
-The one-page plain-language view regenerated after every run.
-_Avoid_: report, status update, dashboard
+**Agent joint**: The one bounded model judgment in the spine, with a fixed output shape.
 
-**Run log**:
-One line per workflow run: trigger, approver, action, verification.
-_Avoid_: audit trail, history, telemetry
+**Gate**: The named approval point for a consequential action.
 
-## The build
+**Dry-run**: An act stage that shows its would-be write without performing it.
 
-**Build spec**:
-The runtime-neutral contract for one workflow, one pipeline stage at a time.
-_Avoid_: PRD, design doc, plan
-
-**Runtime**:
-The system the owner already uses to run scheduled or triggered work, where the workflow is implemented.
-_Avoid_: platform, host, runner
-
-**Implementation**:
-The workflow as built on the runtime, described in the workspace by where it lives, how to run it, how to switch dry-run and live, and how to stop it.
-_Avoid_: scaffold, code, automation
-
-**Pipeline**:
-The fixed stage order every workflow follows: trigger, collect, agent joint, gate, act, verify, log.
-_Avoid_: flow, chain, agent loop
-
-**Stage**:
-One element of the pipeline.
-_Avoid_: step, phase, node
-
-**Agent joint**:
-The one bounded judgment the model makes inside a run, with a fixed output shape.
-_Avoid_: prompt step, LLM call, reasoning
-
-**Joint prompt**:
-The fixed text the runtime sends to the model at the agent joint.
-_Avoid_: system prompt, template, instructions
-
-**Gate**:
-The point where the approver reviews a proposed consequential action before it happens.
-_Avoid_: human in the loop, checkpoint, review step
-
-**Approval object**:
-What the gate shows the approver: proposed action, target, evidence, draft, ambiguity, verification plan.
-_Avoid_: approval card, request, ticket
-
-**Fixture**:
-One safe fixed input with its expected output, run with the act stage in dry-run.
-_Avoid_: test case, mock, sample
-
-**Dry-run**:
-An act stage that prints the exact would-be write instead of performing it.
-_Avoid_: test mode, sandbox, simulation
-
-**Acceptance run**:
-The one real run, cleared at the gate by the approver, that proves a built workflow.
-_Avoid_: acceptance test, pilot run, UAT
-
-**Ladder**:
-The ordered statuses a workflow climbs: candidate, designed, built, proven, live.
-_Avoid_: lifecycle, maturity model, state machine
-
-**Rung**:
-One status on the ladder.
-_Avoid_: stage, phase, level
-
-**Realized value**:
-Hours and money returned so far, computed from verified real runs against the baseline.
-_Avoid_: ROI, savings, impact, returned value
-
-**Adoption gap**:
-The difference between the baseline run rate and the actual verified run rate of a live workflow.
-_Avoid_: usage, utilization
+**Status ladder**: The ordered workflow states: candidate, designed, built, proven, live.

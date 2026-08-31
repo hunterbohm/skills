@@ -32,7 +32,7 @@ Skills are grouped by the kind of work they help with, not by programming langua
 
 See the complete [catalog, compatibility notes, and direct install commands](docs/catalog.md).
 
-The design behind the workflow skills is written up for business owners in [the connected-agent field guide](docs/connected-agent-field-guide.md). Design decisions live in [docs/adr](docs/adr), and the shared vocabulary in [CONTEXT.md](CONTEXT.md).
+The design behind the operations skills is written up for business owners in [the connected-agent field guide](docs/connected-agent-field-guide.md). Design decisions live in [docs/adr](docs/adr), and the shared vocabulary in [CONTEXT.md](CONTEXT.md).
 
 ## Repository layout
 

@@ -13,12 +13,12 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "skills"
 SHARED = (
     (
-        "business/workflow-audit/references/workspace-contract.md",
-        "business/workflow-build/references/workspace-contract.md",
+        "business/ops-audit/references/principles.md",
+        "business/ops-foundation/references/principles.md",
     ),
     (
-        "business/workflow-audit/references/owner-summary.md",
-        "business/workflow-build/references/owner-summary.md",
+        "business/ops-audit/references/workspace-contract.md",
+        "business/ops-foundation/references/workspace-contract.md",
     ),
 )
 

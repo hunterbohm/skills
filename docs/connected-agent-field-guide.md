@@ -2,7 +2,7 @@
 
 This is not a product pitch or a promise that an agent can run an agency by itself. It is the operating model I would use if Claude or another capable agent already had access to the systems where an agency works.
 
-(This guide is a standalone read for a business owner. Where its wording differs from the `workflow-audit` and `workflow-build` skills under `../skills/business/`, the skills are canonical.)
+(This guide is a standalone read for a business owner. Where its wording differs from the `ops-audit` and `ops-foundation` skills under `../skills/business/`, the skills are canonical.)
 
 The goal is simple: reduce the amount of context gathering, coordination, and follow-up that still depends on the founder, while keeping judgment and outbound communication with the people responsible for the client relationship.
 
@@ -228,11 +228,11 @@ Add another workflow or permission class only after the first one repeatedly pro
 
 ## A good first request to Claude
 
-If Claude already has access to the agency’s workspace, install the Workflow Audit skill and say:
+If your agent has access to the agency’s workspace, explicitly invoke the Operations Audit skill and say:
 
-> Audit how this agency currently works using read-only access. Map the recurring workflows you can support with evidence, show me what is observed versus inferred, identify missing sources, and recommend one workflow to implement first. Do not send, write, change permissions, or create a second task system. Produce the audit and a self-serve build spec for the first workflow.
+> Use ops-audit to diagnose how this agency currently works using read-only, consented access. Map the recurring work you can support with evidence, show what is observed versus inferred, identify missing sources, and render one offline roadmap. Do not send, write, change permissions, or create a second task system.
 
-Review the source map and workflow choice before letting it build anything.
+Review and approve the roadmap before ops-foundation installs or builds anything.
 
 ## The standard to hold it to
 
