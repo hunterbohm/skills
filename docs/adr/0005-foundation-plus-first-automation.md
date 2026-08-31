@@ -1,0 +1,7 @@
+# The build skill installs a foundation, then the first automation
+
+"Build one workflow from a spec" is a job any coding agent does from a chat. The first build under `workflow-build` passed its fixture and was a duplicate of something the owner already ran. On 2026-08-30 Hunter decided the build skill's job is to install his way of running operations with agents, then take the roadmap's first automation to live. The foundation lives in the audit workspace, one folder per business: a map file that says where everything lives, `rules.md` that grows one rule per recorded mistake, gates and receipts, the ledger, and `runs.jsonl`. The owner's agent configuration points at that folder. Then the first automation goes up the unchanged ladder, candidate, designed, built, proven, live, on the owner's runtime (ADR 0002 stands).
+
+No plays and no code ship with the skill. Standard plays as spec templates and a reference runtime were both offered and rejected; every automation is written from its card's spec against the runtime rules. The philosophy that makes the skill different ships as `references/principles.md`, drafted from Hunter's own written lines and edited by him before publication.
+
+Consequences: the workspace is the foundation, not a report folder, so the workspace contract gains `rules.md`, the map file, and a foundation status (absent, installed). A leverage move marked as the first move is the owner's to carry out; the build takes the first automation. The report branch proposes a rule after each recorded failure and the owner approves it.

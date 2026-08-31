@@ -35,15 +35,3 @@ Move a workflow from its workflow-audit spec up the ladder to live, on the owner
 ```bash
 npx skills@latest add hunterbohm/skills --skill workflow-build --global
 ```
-
-## Project Management
-
-### [Project Control](../skills/project-management/project-control/SKILL.md)
-
-Build an adaptive view from an active project's real sources. Use for project status, planning, verification, scenarios, or refresh.
-
-**Compatibility:** Codex App only
-
-```bash
-npx skills@latest add hunterbohm/skills --skill project-control --agent codex --global
-```
