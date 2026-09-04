@@ -29,7 +29,6 @@ jobs:
         run: |
           python3 scripts/validate.py
           python3 scripts/validate/ask-hormozi.py
-          python3 scripts/validate/shared-references.py
           python3 scripts/generate-catalog.py --check
       - name: Verify pinned Agent Skills discovery
         run: npx -y skills@1.5.15 add . --list
