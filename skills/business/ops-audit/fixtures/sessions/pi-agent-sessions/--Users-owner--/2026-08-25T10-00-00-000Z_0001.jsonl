@@ -1,0 +1,4 @@
+{"type": "session", "version": 3, "id": "p1", "timestamp": "2026-08-25T10:00:00Z", "cwd": "/Users/owner"}
+{"type": "message", "id": "m1", "timestamp": "2026-08-25T10:00:01Z", "message": {"role": "user", "content": [{"type": "text", "text": "reload pi and test the extension again"}]}}
+{"type": "message", "id": "m2", "timestamp": "2026-08-25T10:00:02Z", "message": {"role": "assistant", "content": [{"type": "toolCall", "name": "bash"}, {"type": "text", "text": "Reloaded."}]}}
+{"type": "message", "id": "m3", "timestamp": "2026-08-25T10:00:03Z", "message": {"role": "user", "content": [{"type": "text", "text": "it crashed, reverting"}]}}

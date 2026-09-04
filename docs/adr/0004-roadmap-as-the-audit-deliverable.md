@@ -1,3 +1,5 @@
+Status: superseded in part by ADR 0006 (first screen and card layout) and ADR 0008 (feedback).
+
 # The audit delivers an interactive roadmap rendered from a template
 
 Until 2026-08-30 `workflow-audit` delivered a markdown inventory, an owner summary, and a build spec for one workflow. Real runs wrote 7,000 to 10,000 words per workspace and picked a workflow the owner already automated. Decision: the audit hands over one file, `roadmap.html`, rendered from `roadmap.json` by a script the skill ships. The template is designed once; the agent only writes the data. Cards are per time sink, grouped Now, Next, Later. Each card carries hours and dollars from the owner's numbers, the evidence, what already runs, and a verdict: keep human, leverage move, or automate with an agent. Two cards are marked, the first move and the first automation.

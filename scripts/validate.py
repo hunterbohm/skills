@@ -82,11 +82,6 @@ def validate_openai_yaml(skill: pathlib.Path, check: Validation) -> None:
             policy is not None and policy.group(1) == "false",
             "ops-audit: openai.yaml must disable implicit invocation",
         )
-    if skill.name == "ops-foundation":
-        check.require(
-            policy is not None and policy.group(1) == "true",
-            "ops-foundation: openai.yaml must allow model invocation",
-        )
     if prompt:
         check.require(
             f"${skill.name}" in prompt.group(1),

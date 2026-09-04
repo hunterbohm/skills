@@ -1,0 +1,6 @@
+{"type": "user", "timestamp": "2026-08-20T10:00:00Z", "cwd": "/Users/owner/proj", "message": {"role": "user", "content": "read the handoff and continue. also here is a screenshot of the error: /tmp/shot.png. my email is owner@example.com and call me at 555-123-4567"}}
+{"type": "assistant", "timestamp": "2026-08-20T10:00:05Z", "message": {"role": "assistant", "content": [{"type": "text", "text": "Reading it now."}, {"type": "tool_use", "name": "Bash", "input": {"command": "cat handoff.md"}}]}}
+{"type": "user", "timestamp": "2026-08-20T10:01:00Z", "message": {"role": "user", "content": [{"type": "tool_result", "content": "..."}]}}
+{"type": "assistant", "timestamp": "2026-08-20T10:01:05Z", "message": {"role": "assistant", "content": [{"type": "text", "text": "Done. The invoice was $1,250.00 and the key is sk-live-ABCDEFGHIJKLMNOPQRSTUVWXYZ1234."}]}}
+{"type": "user", "timestamp": "2026-08-20T10:02:00Z", "message": {"role": "user", "content": "too long, explain simpler"}}
+{"type": "assistant", "timestamp": "2026-08-20T10:02:05Z", "message": {"role": "assistant", "content": [{"type": "text", "text": "Short version: it works."}]}}

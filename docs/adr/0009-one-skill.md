@@ -1,0 +1,5 @@
+# One skill: ops-audit finds, plans, and does; ops-foundation is retired
+
+After the 2026-09-01 rework, Hunter judged the foundation's status ladder, receipts, workflow contracts, and reports less useful than the audit's mining of past agent sessions for time savers and leverage points, which is the part he wants. Decision: `ops-foundation` is deleted. `ops-audit` gains a mining reference that treats past agent sessions as the first source, and a Do branch that performs the next plan step under the owner's approval with a three-state status (proposed, approved, done; holding, ended for holds) recorded through one script that also renders the page and the plan section of the workspace `AGENTS.md`. Building an automation is ordinary agent work under approval, following a one-page spine reference.
+
+Considered and rejected: keeping the foundation unlisted for existing installs (two shapes of the same workspace to keep coherent). This supersedes ADR 0001, 0002, and 0005, and the foundation parts of ADR 0007. No files are vendored between packages any more.

@@ -1,37 +1,28 @@
 # Workspace contract
 
-The owner chooses one folder when durable files are needed. `roadmap.html` is the only owner-facing audit result. The same folder becomes the foundation after approved handoff.
+The owner chooses one folder when durable files are needed. The owner reads nothing in it; the plan is read back in chat.
 
 ```text
 <workspace>/
-├── business.md                     # audit interview record
-├── roadmap.json                    # complete, owner-approved audit data
-├── roadmap.html                    # sole owner-facing audit result
-├── state.json                      # roadmap identity, approval, feedback, foundation state
-├── README.md                       # workspace map, never an audit report
-├── rules.md                        # owner-approved concrete rules only
-├── receipts.jsonl                  # normalized append-only run evidence
-└── workflows/<card-id>/contract.json # runtime and implementation contract
+├── business.md    # interview record, in the owner's words
+├── sources.md     # source map: per source, truth owned, who reads, who approves a write, currency, write check
+├── roadmap.json   # the plan and the cards behind it
+├── state.json     # roadmap identity, evidence status, change record, approval, step status
+└── mining/        # redacted session digests per host and harness; private, never committed or shared
 ```
 
-Read `state.json` before every write. Preserve immutable roadmap ID, revision, card IDs and versions, consent, exclusions, evidence references, feedback identities, pending feedback, partial-stop status, and feedback-first resume behavior. A handoff is eligible only when `roadmap.json` and `state.json` have matching ID/revision, no pending feedback, and identical `owner_approval` records binding that ID/revision, named approver, and timestamp. Preserve conflicting inputs and stop.
+Read `state.json` before every write. Preserve roadmap ID, revision, card IDs and versions, consent, exclusions, evidence references, the change record, step status, and partial-stop status. Preserve conflicting inputs and stop.
 
-## Foundation state and writes
+## Feedback and revisions
 
-`state.json` additionally records `foundation`: `{"status":"absent|installed","installed_at":null,"revision":0}` and `workflows`, keyed by stable card ID. Each workflow has `status` (`candidate`, `designed`, `built`, `proven`, `live`), `revision`, and receipt IDs. All mutable workspace files use the exclusive lock and same-directory atomic replacement. Re-initialization creates only missing map/rules/receipt files and never replaces owner content. A revision mismatch is a conflict: preserve files and stop. Workspace scripts require POSIX Python 3; the implemented automation remains runtime-neutral.
+The owner speaks in chat. The agent applies the change to `roadmap.json`, increments `revision` in both files, appends `{revision, date, summary}` to `state.changes`, and reads the plan back. Never edit a card or a step without a change entry. Approval binds one revision; a change after approval needs a new approval.
 
-## Ladder and evidence
+## Step status
 
-`candidate → designed → built → proven → live`. `built` requires a verified dry-run fixture receipt. `proven` requires a current verified real receipt, named approval when the approved card requires it, destination read-back, and recorded `replay_verified: true`. `live` requires prior proven status plus a verified activation receipt with `explicit_instruction: true` and active-trigger read-back. A failed supporting proof automatically regresses status.
+`state.steps` is keyed by card ID: `{"status": ..., "note": ..., "date": ...}`. A move or automation runs `proposed → approved → done`; a hold runs `holding → ended`. A missing entry means the first status. `approved` carries the owner's words; `done` carries what was done and how it was checked. Status changes never touch the plan revision.
 
-## Runtime records and reporting
+`scripts/workspace.py` is the only writer of step status and the only printer of the plan. `plan` validates both files and prints the plan as chat text, the title and the one decision per step, or every line with `--full`. `step` refuses to move anything on a plan that is not approved at its current revision, moves a step one status forward, refuses a main-lane step until every earlier main-lane step is done, refuses any change without a note, and prints the plan afterwards.
 
-Each workflow contract records the implementation location, run, switch, and stop/read-back instructions plus its runtime-owned record source. Runtimes that cannot append locally expose their source; report imports and normalizes it before computing results. For requested `YYYY-MM`, count only unique verified real receipts in that month:
+## Eligibility
 
-```text
-realized hours = verified real runs × hours_per_run
-realized value = realized hours × hourly_value (only when both owner values exist)
-adoption gap = baseline runs_per_month − verified real runs in the reporting month
-```
-
-Unknown stays unknown. A recorded failure may yield one proposed concrete rule; it enters `rules.md` only after owner approval.
+A main-lane step is eligible when every earlier main-lane step is done. A parallel-lane step is eligible at once. A hold is never taken.

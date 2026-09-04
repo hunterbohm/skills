@@ -10,7 +10,7 @@
   "scripts": {
     "catalog": "python3 scripts/generate-catalog.py",
     "catalog:check": "python3 scripts/generate-catalog.py --check",
-    "validate": "python3 scripts/validate.py && python3 scripts/validate/ask-hormozi.py && python3 scripts/validate/shared-references.py && python3 skills/business/ops-audit/scripts/test.py && python3 skills/business/ops-foundation/scripts/test.py && npm run catalog:check",
+    "validate": "python3 scripts/validate.py && python3 scripts/validate/ask-hormozi.py && python3 skills/business/ops-audit/scripts/test.py && npm run catalog:check",
     "discover": "npx -y skills@1.5.15 add . --list",
     "discover:latest": "npx -y skills@latest add . --list",
     "publish:main": "bash scripts/publish.sh"
