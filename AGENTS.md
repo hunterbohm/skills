@@ -8,13 +8,11 @@ skills here. Nothing upstream generates them.
 - Package: `skills/<category>/<name>/` — `SKILL.md`, `references/`, `evals/`,
   `LICENSE`. Every package installs on its own, so it must not point outside
   its own directory.
-- `ops-audit` and `ops-foundation` share two vendored references
-  (`references/workspace-contract.md`, `references/principles.md`). Edit the
-  `ops-audit` copy, then copy it over the `ops-foundation` copy. Validation
-  fails on drift. `owner-summary.md` is retired.
+- `ops-audit/evals/proof-checklist.md` is that skill's proof standard: one real
+  run on the owner's own operations. Nothing runs that file automatically.
 - No private names, machine paths, or credentials. Users choose their own
   paths; the skill asks once.
-- `CONTEXT.md` is the glossary for the workflow pair. `docs/adr/` records
+- `CONTEXT.md` is the glossary for `ops-audit`. `docs/adr/` records
   design decisions. `docs/` also holds public reads that are not part of any
   package.
 

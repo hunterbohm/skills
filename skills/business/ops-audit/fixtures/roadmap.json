@@ -1,1 +1,276 @@
-{"roadmap_id": "example-works-20260830", "business": "Example Works", "date": "2026-08-30", "revision": 1, "incomplete": false, "stopping_point": null, "consent": [{"category": "documents", "scope": "owner-selected operations folder"}], "exclusions": [{"category": "documents", "declared_root_or_account": "private drive"}], "first_move": "meeting-actions", "first_automation": null, "first_automation_reason": "No safe automation has evidence yet.", "pending_feedback": [], "cards": [{"id": "meeting-actions", "version": 1, "group": "Now", "action": "Use one action register after meetings", "hours_per_month": 4, "hourly_value": 50, "annual_labor_value": 2400, "causal_path": {"trigger": "Meeting ends", "collection": "Notes are gathered", "judgment": "Owner identifies commitments", "action": "Register actions", "destination": "Action register", "read_back": "Owner checks register", "failure_visibility": "Missing actions are visible at review"}, "evidence": [{"label": "observed", "claim": "Actions split across notes", "source": "two redacted meeting notes"}], "existing_coverage": {"definitions": [], "recent_runs": [], "outputs": [], "failure_visibility": []}, "gaps": ["No safe automation evidence"], "approval": {"required": false, "approver": null, "gate": null}, "intervention": "leverage move", "diagnosis": "Actions split across notes", "proof": "Two observed meeting notes", "verdict": "leverage move"}, {"id": "report-format", "version": 1, "group": "Next", "action": "Keep report formatting human", "hours_per_month": null, "hourly_value": null, "annual_labor_value": null, "causal_path": {"trigger": "Reporting cycle", "collection": "Export is collected", "judgment": "Owner checks format", "action": "Format report", "destination": "Report folder", "read_back": "Owner opens report", "failure_visibility": "Export errors are alerted"}, "evidence": [{"label": "owner-reported", "claim": "Cost is unknown", "source": "owner interview"}], "existing_coverage": {"definitions": ["scheduled export definition"], "recent_runs": ["last scheduled run"], "outputs": ["report folder output"], "failure_visibility": ["export error alert"]}, "gaps": ["Hours and rate not supplied"], "approval": {"required": true, "approver": "Owner", "gate": "Approve any publishing change"}, "intervention": "simplify", "diagnosis": "Existing export covers collection but not the owner's formatting judgment", "proof": "Owner report and existing export", "verdict": "keep human"}], "owner_approval": null}
+{
+  "roadmap_id": "example-works-20260830",
+  "business": "Example Works",
+  "date": "2026-08-30",
+  "revision": 1,
+  "incomplete": false,
+  "stopping_point": null,
+  "consent": [
+    {
+      "category": "documents",
+      "scope": "owner-selected operations folder"
+    },
+    {
+      "category": "mail",
+      "scope": "shared inbox"
+    }
+  ],
+  "exclusions": [
+    {
+      "category": "documents",
+      "declared_root_or_account": "private drive"
+    }
+  ],
+  "cards": [
+    {
+      "id": "meeting-actions",
+      "version": 1,
+      "action": "Use one action register after meetings",
+      "hours_per_month": 4,
+      "hourly_value": 50,
+      "annual_labor_value": 2400,
+      "causal_path": {
+        "trigger": "Meeting ends",
+        "collection": "Notes are gathered",
+        "judgment": "Owner identifies commitments",
+        "action": "Register actions",
+        "destination": "Action register",
+        "read_back": "Owner checks register",
+        "failure_visibility": "Missing actions are visible at review"
+      },
+      "evidence": [
+        {
+          "label": "observed",
+          "claim": "Actions split across notes",
+          "source": "two redacted meeting notes"
+        }
+      ],
+      "existing_coverage": {
+        "definitions": [],
+        "recent_runs": [],
+        "outputs": [],
+        "failure_visibility": []
+      },
+      "gaps": [
+        "No single register exists"
+      ],
+      "approval": {
+        "required": true,
+        "approver": "Owner",
+        "gate": "Approve the register location before notes are moved"
+      },
+      "intervention": "leverage move",
+      "diagnosis": "Actions split across notes",
+      "proof": "One register holds every action from the last two meetings",
+      "verdict": "leverage move"
+    },
+    {
+      "id": "lead-follow-up",
+      "version": 1,
+      "action": "Draft follow-ups for new leads for owner approval",
+      "hours_per_month": 6,
+      "hourly_value": 50,
+      "annual_labor_value": 3600,
+      "causal_path": {
+        "trigger": "New lead arrives",
+        "collection": "Lead record and last thread are read",
+        "judgment": "Agent drafts one follow-up",
+        "action": "Owner approves and sends",
+        "destination": "Shared inbox",
+        "read_back": "Sent folder is checked",
+        "failure_visibility": "Unsent drafts are listed"
+      },
+      "evidence": [
+        {
+          "label": "observed",
+          "claim": "Follow-ups lag by three days",
+          "source": "redacted inbox sample"
+        },
+        {
+          "label": "owner-reported",
+          "claim": "Sending stays with the owner",
+          "source": "owner interview"
+        }
+      ],
+      "existing_coverage": {
+        "definitions": [],
+        "recent_runs": [],
+        "outputs": [],
+        "failure_visibility": []
+      },
+      "gaps": [
+        "No draft step exists"
+      ],
+      "approval": {
+        "required": true,
+        "approver": "Owner",
+        "gate": "Approve each send"
+      },
+      "intervention": "agent automation",
+      "diagnosis": "Follow-ups wait on the owner drafting them",
+      "proof": "A draft appears within one hour of a new lead and the sent folder shows the approved send",
+      "verdict": "automate with an agent"
+    },
+    {
+      "id": "calendar-prep-check",
+      "version": 1,
+      "action": "Verify or retire the two overlapping calendar preparation jobs",
+      "hours_per_month": null,
+      "hourly_value": null,
+      "annual_labor_value": null,
+      "causal_path": {
+        "trigger": "A meeting is booked",
+        "collection": "Two jobs read the calendar",
+        "judgment": "Owner reads whichever brief arrives",
+        "action": "Prepare for the meeting",
+        "destination": "Morning note",
+        "read_back": "Owner opens the note",
+        "failure_visibility": "A missing brief goes unnoticed"
+      },
+      "evidence": [
+        {
+          "label": "observed",
+          "claim": "Two job definitions overlap and neither has a recent run record",
+          "source": "bounded automation scan"
+        }
+      ],
+      "existing_coverage": {
+        "definitions": [
+          "daily brief job",
+          "meeting prep job"
+        ],
+        "recent_runs": [],
+        "outputs": [
+          "morning note"
+        ],
+        "failure_visibility": []
+      },
+      "gaps": [
+        "No run records",
+        "No observed brief that led to preparation"
+      ],
+      "approval": {
+        "required": true,
+        "approver": "Owner",
+        "gate": "Approve retiring or changing either job"
+      },
+      "intervention": "remove",
+      "diagnosis": "Two calendar jobs overlap and neither is proven to run",
+      "proof": "Each kept job shows a run in the last week and one brief that was used",
+      "verdict": "leverage move"
+    },
+    {
+      "id": "report-format",
+      "version": 1,
+      "action": "Keep report formatting human",
+      "hours_per_month": null,
+      "hourly_value": null,
+      "annual_labor_value": null,
+      "causal_path": {
+        "trigger": "Reporting cycle",
+        "collection": "Export is collected",
+        "judgment": "Owner checks format",
+        "action": "Format report",
+        "destination": "Report folder",
+        "read_back": "Owner opens report",
+        "failure_visibility": "Export errors are alerted"
+      },
+      "evidence": [
+        {
+          "label": "owner-reported",
+          "claim": "Cost is unknown",
+          "source": "owner interview"
+        }
+      ],
+      "existing_coverage": {
+        "definitions": [
+          "scheduled export definition"
+        ],
+        "recent_runs": [
+          "last scheduled run"
+        ],
+        "outputs": [
+          "report folder output"
+        ],
+        "failure_visibility": [
+          "export error alert"
+        ]
+      },
+      "gaps": [
+        "Hours and rate not supplied"
+      ],
+      "approval": {
+        "required": true,
+        "approver": "Owner",
+        "gate": "Approve any publishing change"
+      },
+      "intervention": "simplify",
+      "diagnosis": "Existing export covers collection but not the owner's formatting judgment",
+      "proof": "Two reporting cycles completed by hand with the friction noted",
+      "verdict": "keep human"
+    }
+  ],
+  "plan": {
+    "steps": [
+      {
+        "card": "meeting-actions",
+        "lane": "main",
+        "title": "One list of actions after every meeting",
+        "do": [
+          "Make one page for meeting actions.",
+          "Move the actions from the last two meetings onto it."
+        ],
+        "you_decide": "Where the page lives. Nothing moves until you say so.",
+        "done_when": "The page holds every action from the last two meetings.",
+        "never": null
+      },
+      {
+        "card": "lead-follow-up",
+        "lane": "main",
+        "title": "A draft reply waits for every new lead",
+        "do": [
+          "When a lead arrives, a draft follow-up appears in your inbox.",
+          "You approve and send it."
+        ],
+        "you_decide": "Approve before any schedule turns on, and approve every send.",
+        "done_when": "A draft appears within an hour of a new lead, and the sent folder shows your approved reply.",
+        "never": "Nothing sends without you."
+      },
+      {
+        "card": "calendar-prep-check",
+        "lane": "parallel",
+        "title": "Sort out the two calendar helpers",
+        "do": [
+          "Check which of the two meeting-prep helpers still runs.",
+          "Keep the one that works. Retire the other."
+        ],
+        "you_decide": "Which helper to keep, and whether to retire the other.",
+        "done_when": "One helper is left, it ran this week, and you used its brief once.",
+        "never": null
+      },
+      {
+        "card": "report-format",
+        "lane": "parallel",
+        "title": "Reports stay by hand for two cycles",
+        "do": [
+          "Format the next two reports as you do now.",
+          "Note what slowed you down."
+        ],
+        "you_decide": "Already decided: keep it by hand. Decide again after two cycles.",
+        "done_when": "Two reports are done and the slow parts are written down.",
+        "never": null
+      }
+    ]
+  },
+  "first_move": "meeting-actions",
+  "first_automation": "lead-follow-up",
+  "first_automation_reason": null,
+  "owner_approval": null,
+  "focus": null,
+  "extensions": [
+    {
+      "add": "a browser tool the agent can drive",
+      "unlocks": "checking the calendar helpers without you pasting screenshots"
+    }
+  ]
+}

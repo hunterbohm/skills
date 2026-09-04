@@ -1,53 +1,55 @@
-# Operations audit and foundation
+# Operations audit
 
-Terms shared by the `ops-audit` and `ops-foundation` skills. One business, one workspace, and one approved first automation at a time.
+Terms for the `ops-audit` skill.
 
 ## People
 
-**Owner**: The person in the chat who owns the business, accounts, and runtime.
-
-**Approver**: The named person who clears a consequential action at its gate.
+**Owner**: The person in the chat who owns the business, accounts, and runtime. The owner decides and approves; the agent does the rest. A named approver may clear a consequential action.
 
 ## Audit
 
-**Audit**: The explicit, consent-based diagnosis that produces one offline `roadmap.html`.
+**Audit**: The consent-based diagnosis that produces the plan, the cards behind it, and the source map.
 
-**Roadmap**: The rendered owner-facing audit result, based on `roadmap.json`.
+**Mining**: Reading consented sources, past agent sessions first, for hand work, repeats, corrections, re-dos, and existing automation.
 
-**Card**: One diagnosed time sink with evidence, causal path, existing coverage, intervention, proof, and verdict.
+**Source map**: `sources.md`: per source, what truth it owns, who may read it, who approves a write, how current it is, how a write is checked.
 
-**Evidence label**: The provenance of a claim: observed, owner-reported, or inferred.
+**Card**: The audit's diagnosis of one time sink: evidence labelled observed, owner-reported, or inferred, causal path, existing coverage, intervention, proof, and verdict.
 
-**First move**: The one roadmap action selected to reduce operational burden now.
+**Proof**: What would show a card's action worked, in audit words.
 
-**First automation**: The approved card that ops-foundation may build. It can be absent only with a written reason.
+**Verdict**: leverage move, automate with an agent, or keep human. The plan turns these into a move, an automation, or a hold.
 
-**Feedback**: A revision-safe accept, change, or reject request for a roadmap card.
+## Plan
+
+**Roadmap**: `roadmap.json`, holding the plan and the cards.
+
+**Plan**: The ordered steps the owner reads in chat, in the owner's own terms. Each step points at one card.
+
+**Step**: One thing that will happen, who decides, and when it is done. A move, an automation, or a hold.
+
+**Lane**: Main-lane steps happen in order. Parallel-lane steps do not wait.
+
+**Move**: A one-time change the agent performs once, under approval, and checks.
+
+**Automation**: Work the agent builds on the owner's runtime to run on a trigger, following the spine.
+
+**Hold**: Nothing changes for a stated period; it ends with a new decision.
+
+**Done when**: What the owner will see when a step is complete.
+
+**You decide**: The one decision the owner must make for a step.
+
+**First move**: The first main-lane step.
+
+**First automation**: The first automation step, absent only with a written reason.
+
+**Feedback**: The owner's words in chat asking for a change. The agent applies it, bumps the revision, and records the change.
 
 ## Workspace
 
-**Workspace**: The durable folder selected by the owner for one business.
+**Workspace**: The folder the owner chose for one business; see `references/workspace-contract.md`.
 
-**State**: The machine-readable audit and foundation record in `state.json`.
+**Step status**: A move or automation runs proposed, approved, done. A hold runs holding, ended. Each status carries the owner's words or what was done.
 
-**Foundation**: The installed workspace map, rules, receipts, and operating contract that support the approved automation.
-
-**Rule**: A concrete owner-approved lesson from a recorded failure, kept in `rules.md`.
-
-**Receipt**: The record of a fixture, real run, activation, or report, including action and read-back evidence.
-
-## Implementation
-
-**Runtime**: The owner-chosen system that runs the automation.
-
-**Workflow contract**: The implementation contract for the approved card: runtime, baseline, fixture, deterministic spine, idempotency basis, failure destination, and operating instructions.
-
-**Deterministic spine**: The fixed sequence: trigger, collect, bounded agent joint, gate, act, verify, and log.
-
-**Agent joint**: The one bounded model judgment in the spine, with a fixed output shape.
-
-**Gate**: The named approval point for a consequential action.
-
-**Dry-run**: An act stage that shows its would-be write without performing it.
-
-**Status ladder**: The ordered workflow states: candidate, designed, built, proven, live.
+**Eligible step**: The next step the agent may take: a main-lane step once every earlier main-lane step is done, a parallel-lane step at once, a hold never.

@@ -18,20 +18,10 @@ npx skills@latest add hunterbohm/skills --skill ask-hormozi --global
 
 ### [Operations Audit](../skills/business/ops-audit/SKILL.md)
 
-Diagnose operational work from consented evidence and render one offline roadmap. Use only when the owner explicitly invokes it.
+Find the owner's time sinks and leverage points from consented evidence and past agent sessions, write the plan in chat, and do its steps under their approval. Runs only when the owner invokes it.
 
 **Compatibility:** Agent Skills-compatible clients
 
 ```bash
 npx skills@latest add hunterbohm/skills --skill ops-audit --global
-```
-
-### [Operations Foundation](../skills/business/ops-foundation/SKILL.md)
-
-Installs and operates an approved ops-audit roadmap handoff, or an already-installed ops-foundation workspace, on the owner's runtime.
-
-**Compatibility:** Agent Skills-compatible clients
-
-```bash
-npx skills@latest add hunterbohm/skills --skill ops-foundation --global
 ```

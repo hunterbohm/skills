@@ -1,0 +1,39 @@
+{
+  "roadmap_id": "example-works-20260830",
+  "revision": 1,
+  "consent": [
+    {
+      "category": "documents",
+      "scope": "owner-selected operations folder"
+    },
+    {
+      "category": "mail",
+      "scope": "shared inbox"
+    }
+  ],
+  "exclusions": [
+    {
+      "category": "documents",
+      "declared_root_or_account": "private drive"
+    }
+  ],
+  "evidence": [
+    {
+      "category": "documents",
+      "status": "scanned",
+      "source": "bounded folder scan, 2026-08-30",
+      "limit": "Two redacted meeting notes only."
+    },
+    {
+      "category": "mail",
+      "status": "scanned",
+      "source": "bounded inbox sample, 2026-08-30",
+      "limit": "Metadata and one redacted thread."
+    }
+  ],
+  "changes": [],
+  "incomplete": false,
+  "stopped_at": null,
+  "owner_approval": null,
+  "steps": {}
+}
