@@ -132,8 +132,8 @@ def main() -> None:
         fail(errors, "quote-heavy maxims.md must not ship")
 
     evals = json.loads((SKILL / "evals" / "evals.json").read_text(encoding="utf-8"))
-    if len(evals.get("evals", [])) != 12:
-        fail(errors, "ask-hormozi must keep 12 focused evals")
+    if len(evals.get("evals", [])) != 13:
+        fail(errors, "ask-hormozi must keep 13 focused evals")
 
     validate_evidence(errors)
     validate_frameworks(errors)
