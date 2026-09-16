@@ -30,13 +30,13 @@ When a ledger opens:
    ```bash
    python3 scripts/ledger.py resolve <slug> --index N --status done|tried|dropped --result "what happened, in numbers"
    ```
-2. **Reuse the saved business context.** `model` holds what is already known. Ask only for missing or materially changed facts that could change the answer, not a repeat of the business background.
+2. **Reuse the saved business context.** `model` holds what is already known. Read relevant business documents the owner identifies before asking for missing or materially changed facts. Follow the short intake in `SKILL.md`; do not repeat the business background or require every model field to be filled.
 3. **Surface drift.** When stated numbers differ materially from `model`, say so and use the newer ones.
 4. **Treat a repeated constraint as evidence.** If the same constraint recurs with prescriptions tried, question the playbook fit or the diagnosis, not the owner's effort.
 
 ## Write rule — after delivering
 
-One call records the run:
+One call records the run. Use `--model key=value` for useful business facts supported by the owner or identified documents, including newly learned offer or delivery context. Preserve other saved facts; resolve material conflicts before replacing them. Do not store whole documents or unconfirmed assumptions as business facts:
 
 ```bash
 python3 scripts/ledger.py append <slug> \
