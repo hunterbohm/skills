@@ -177,8 +177,8 @@ def cmd_append(args) -> None:
     if unresolved and not args.allow_unresolved:
         die("open prescription(s) at index "
             f"{', '.join(map(str, unresolved))} have no recorded result. "
-            "Ask what happened and run `resolve` first, or pass --allow-unresolved "
-            "if the owner genuinely could not say.")
+            "Resolve only when the owner supplies an outcome, or pass --allow-unresolved "
+            "when prior advice is unrelated or its result is unavailable.")
     for pair in args.model or []:
         key, _, value = pair.partition("=")
         if not _:
@@ -254,7 +254,8 @@ def main() -> None:
     p.add_argument("--fit", choices=FIT)
     p.add_argument("--model", action="append", metavar="KEY=VALUE")
     p.add_argument("--correction")
-    p.add_argument("--allow-unresolved", action="store_true")
+    p.add_argument("--allow-unresolved", action="store_true",
+                   help="preserve open advice when unrelated or its outcome is unavailable")
     p.set_defaults(func=cmd_append)
 
     p = sub.add_parser("resolve", help="record what happened to a prescription")
