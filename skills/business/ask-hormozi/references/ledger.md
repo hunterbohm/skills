@@ -16,6 +16,12 @@ python3 scripts/ledger.py list                    # businesses with a ledger
 
 `root` exits 3 when nothing is recorded, or when the recorded folder is gone (moved folder, different machine). Both mean the same thing: ask the owner where the ledger lives and re-record it. Never start a fresh ledger to route around a missing root — the old history is the asset.
 
+## Updates preserve external state
+
+Choose a durable data folder outside the skill installation and its skills collection, such as `~/business-memory/ask-hormozi`. Keep the config outside the installation too. Updating or replacing the skill package then leaves those files in place; the new helper reopens the recorded folder. Do not use a temporary folder for real business memory.
+
+The helper rejects state or config paths inside a skill package or its installed skills collection, including paths redirected there through symlinks. It never deletes or migrates existing history. If older state is inside an installation, stop before updating: copy the complete business-memory folder to an external location, verify the copy, record the new root (with `--force` only for a confirmed move), and validate/open the businesses there. Move an unsafe config outside the installation as well. Only then update the skill. A missing or incompatible ledger must not be replaced with an empty one.
+
 ## Read rule — before diagnosing
 
 ```bash

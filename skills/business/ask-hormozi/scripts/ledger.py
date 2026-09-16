@@ -37,9 +37,30 @@ SCHEMA_KEYS = {
 }
 
 
+def external_state_path(path: pathlib.Path) -> pathlib.Path:
+    """Keep mutable state outside replaceable skill packages, including symlinks."""
+    lexical = path.expanduser().absolute()
+    resolved = lexical.resolve()
+    script = pathlib.Path(__file__).absolute()
+    protected = {script.parent.parent, script.resolve().parent.parent}
+    # Installers may replace the entire skills collection, not just this package.
+    for package in tuple(protected):
+        protected.update(parent for parent in package.parents if parent.name == "skills")
+    for candidate in (lexical, resolved):
+        if any(candidate == root or root in candidate.parents for root in protected):
+            die("business memory and its config must live outside the skill installation. "
+                "Copy any existing history to a separate data folder before updating; "
+                "then record that folder with root --set. Nothing was moved or deleted.")
+        if any((parent / "SKILL.md").is_file() for parent in (candidate, *candidate.parents)):
+            die("business memory and its config cannot live inside a skill package. "
+                "Copy existing history to a separate data folder before updating; "
+                "then record that folder with root --set. Nothing was moved or deleted.")
+    return resolved
+
+
 def config_path() -> pathlib.Path:
     base = os.environ.get("XDG_CONFIG_HOME") or pathlib.Path.home() / ".config"
-    return pathlib.Path(base) / "ask-hormozi" / "config.json"
+    return external_state_path(pathlib.Path(base) / "ask-hormozi" / "config.json")
 
 
 def read_config() -> dict:
@@ -53,8 +74,9 @@ def read_config() -> dict:
 
 
 def write_json(path: pathlib.Path, payload: dict) -> None:
+    path = external_state_path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp = external_state_path(path.with_suffix(path.suffix + ".tmp"))
     tmp.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     tmp.replace(path)
 
@@ -73,7 +95,7 @@ def resolve_root(require_exists: bool = True) -> pathlib.Path:
     if not raw:
         die("no advisory root recorded. Ask the owner where ledgers should live, "
             "then run: ledger.py root --set <path>", 3)
-    root = pathlib.Path(raw).expanduser()
+    root = external_state_path(pathlib.Path(raw))
     if require_exists and not root.is_dir():
         die(f"recorded advisory root does not exist: {root}\n"
             "        Ask the owner again, then re-record it with root --set "
@@ -84,7 +106,7 @@ def resolve_root(require_exists: bool = True) -> pathlib.Path:
 def ledger_path(slug: str) -> pathlib.Path:
     if not SLUG_RE.fullmatch(slug):
         die(f"'{slug}' is not a kebab-case business slug")
-    return resolve_root() / slug / "advisory.json"
+    return external_state_path(resolve_root() / slug / "advisory.json")
 
 
 def load(slug: str) -> dict:
@@ -120,7 +142,7 @@ def validate(data: dict, where: pathlib.Path) -> None:
 # --------------------------------------------------------------------------
 def cmd_root(args) -> None:
     if args.set:
-        new = pathlib.Path(args.set).expanduser().resolve()
+        new = external_state_path(pathlib.Path(args.set))
         cfg = read_config()
         old = cfg.get("advisory_root")
         if old and str(new) != old and not args.force:
