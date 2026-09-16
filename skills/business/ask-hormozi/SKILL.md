@@ -36,7 +36,7 @@ Completion criterion: an Advise or Audit answer has a Direct, Translate, or Over
 
 ## 3. Diagnose the constraint
 
-For **Advise** and **Audit** on a real, named business, load `references/ledger.md` and open that business's ledger first with `scripts/ledger.py`, subcommand `open <business-slug>`: review open prescriptions and their results before new diagnosis, and ask only for facts the ledger lacks.
+For **Advise** and **Audit** on a real, named business, load `references/ledger.md` and open that business's ledger first with `scripts/ledger.py`, subcommand `open <business-slug>`: reuse saved business context and ask only for missing or materially changed facts. Review prior advice for relevance to the current question; ask what happened only when the result could change this answer. Unrelated outstanding advice must not delay the current request.
 
 Use known context first. When a missing fact would change the verdict, ask once for a compact batch:
 

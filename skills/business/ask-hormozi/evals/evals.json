@@ -125,6 +125,30 @@
         "Does not invent a transcript, timestamp, publication date, or repaired URL.",
         "Does not force a business diagnosis onto a source-verification request."
       ]
+    },
+    {
+      "id": 11,
+      "prompt": "A fictional business ledger is already open: Cedar Roofing sells residential roof replacements for $14,000 in Dallas. There is an open prescription to test a hiring referral bonus, with no result yet. The owner asks: What should our roof replacement guarantee cover?",
+      "expected_output": "Reuses the saved business facts, addresses the guarantee question, and leaves the unrelated hiring prescription open.",
+      "files": [],
+      "assertions": [
+        "Does not ask the owner to repeat the business type, location, or price.",
+        "Does not require a hiring progress report before answering the guarantee question.",
+        "Records the new run using --allow-unresolved while preserving the old prescription and its unknown result.",
+        "Asks only for missing facts that could change the guarantee recommendation."
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "A fictional business ledger is already open: Cedar Roofing previously had poor first-30-day cash collection. Its open prescription is to collect a $3,300 deposit. The owner now asks whether to double ad spend. No result of the deposit change is recorded.",
+      "expected_output": "Recognizes that the deposit outcome could affect the ad-spend decision and asks for the relevant result.",
+      "files": [],
+      "assertions": [
+        "Asks whether the deposit change was tried and what happened because it affects the current decision.",
+        "Does not invent an outcome or mark the prescription resolved without owner evidence.",
+        "If the owner cannot supply the result, preserves the open advice and uses --allow-unresolved to record any new run.",
+        "Uses conditional advice or requests necessary facts rather than assuming the cash constraint was fixed."
+      ]
     }
   ]
 }
