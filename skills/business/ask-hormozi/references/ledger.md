@@ -1,12 +1,14 @@
 # Advisory Ledger — Memory Across Sessions
 
-Load this file when an **Advise** or **Audit** request concerns a real, named business. The ledger preserves business context so the owner does not have to explain the same background each session. Prior advice and results inform a new answer when relevant.
+Load this file when an **Advise** or **Audit** request concerns a named business, including a fictional demo with user- or workspace-authorized persistent memory. The ledger preserves business context so the owner does not have to explain the same background each session. Prior advice and results inform a new answer when relevant.
 
 `scripts/ledger.py` owns the state. Call it rather than reading or writing `advisory.json` by hand — it enforces the schema, writes atomically, and refuses the moves that would silently fork a business's history.
 
 ## Where state lives
 
-One ledger per business at `<advisory-root>/<business-slug>/advisory.json`. The root is resolved from `$ASK_HORMOZI_ADVISORY_ROOT`, then from the recorded root in `~/.config/ask-hormozi/config.json`, so it survives across sessions and runtimes.
+One ledger per business at `<advisory-root>/<business-slug>/advisory.json`. When the user or workspace explicitly specifies a memory folder, set `ASK_HORMOZI_ADVISORY_ROOT` to its absolute path on every helper call; do not fall back to a different global ledger. A workspace using Claude Code should expose these instructions through `CLAUDE.md` (and may set the environment variable in project settings); `AGENTS.md` alone is not its startup instruction file. Use the helper and references from the skill package actually loaded; keep installed copies current.
+
+The root is resolved from `$ASK_HORMOZI_ADVISORY_ROOT`, then from the recorded root in `~/.config/ask-hormozi/config.json`, so it survives across sessions and runtimes.
 
 ```bash
 python3 scripts/ledger.py root                    # where ledgers live
@@ -28,7 +30,7 @@ The helper rejects state or config paths inside a skill package or its installed
 python3 scripts/ledger.py open <business-slug>
 ```
 
-Exit 4 means no ledger yet: offer to start one with `init <slug> --business "Name"`. If the owner declines, proceed without it and do not ask again in the session.
+Exit 4 means no ledger yet. If the user or workspace has already authorized memory here, run `init <slug> --business "Name"` immediately; otherwise offer to start one. A fictional label is not a reason to skip authorized memory. If the owner declines, proceed without it and do not ask again in the session.
 
 When a ledger opens:
 
@@ -40,9 +42,9 @@ When a ledger opens:
 3. **Surface drift.** When stated numbers differ materially from `model`, say so and use the newer ones.
 4. **Treat a repeated constraint as evidence.** If the same constraint recurs with prescriptions tried, question the playbook fit or the diagnosis, not the owner's effort.
 
-## Write rule — after delivering
+## Write rule — before the final reply
 
-One call records the run. Use `--model key=value` for useful business facts supported by the owner or identified documents, including newly learned offer or delivery context. Preserve other saved facts; resolve material conflicts before replacing them. Do not store whole documents or unconfirmed assumptions as business facts:
+Once the recommendation is ready, save it before sending the final reply. One call records the run. Use `--model key=value` for useful business facts supported by the owner or identified documents, including newly learned offer or delivery context. Preserve other saved facts; resolve material conflicts before replacing them. Do not store whole documents or unconfirmed assumptions as business facts:
 
 ```bash
 python3 scripts/ledger.py append <slug> \
@@ -58,4 +60,4 @@ Keep `--result` observational: what happened, in numbers where possible, not a g
 
 ## Completion check
 
-A ledgered run is complete when saved business context informs the answer, relevant supplied outcomes are recorded, unrelated or unknown outcomes remain unchanged, the new run is recorded, and `validate <slug>` passes.
+A ledgered run is complete when saved business context informs the answer, relevant supplied outcomes are recorded, unrelated or unknown outcomes remain unchanged, the new run is recorded, and `validate <slug>` passes. Then `open <slug>` again and check that the new run and supported facts appear. If saving or readback fails, say that this session was not saved and identify the failure; do not claim that the next session will remember it.
