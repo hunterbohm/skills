@@ -11,9 +11,10 @@ One ledger per business at `<advisory-root>/<business-slug>/advisory.json`. When
 The root is resolved from `$ASK_HORMOZI_ADVISORY_ROOT`, then from the recorded root in `~/.config/ask-hormozi/config.json`, so it survives across sessions and runtimes.
 
 ```bash
-python3 scripts/ledger.py root                    # where ledgers live
-python3 scripts/ledger.py root --set <path>       # record it (once per machine)
-python3 scripts/ledger.py list                    # businesses with a ledger
+# <skill> is the folder holding SKILL.md; run the helper by full path from anywhere.
+python3 <skill>/scripts/ledger.py root                    # where ledgers live
+python3 <skill>/scripts/ledger.py root --set <path>       # record it (once per machine)
+python3 <skill>/scripts/ledger.py list                    # businesses with a ledger
 ```
 
 `root` exits 3 when nothing is recorded, or when the recorded folder is gone (moved folder, different machine). Both mean the same thing: ask the owner where the ledger lives and re-record it. Never start a fresh ledger to route around a missing root — the old history is the asset.
@@ -27,7 +28,7 @@ The helper rejects state or config paths inside a skill package or its installed
 ## Read rule — before diagnosing
 
 ```bash
-python3 scripts/ledger.py open <business-slug>
+python3 <skill>/scripts/ledger.py open <business-slug>
 ```
 
 Exit 4 means no ledger yet. If the user or workspace has already authorized memory here, run `init <slug> --business "Name"` immediately; otherwise offer to start one. A fictional label is not a reason to skip authorized memory. If the owner declines, proceed without it and do not ask again in the session.
@@ -36,7 +37,7 @@ When a ledger opens:
 
 1. **Check relevance before following up.** Review `_open_prescriptions` against the current question. Ask what happened only when the result could change the current diagnosis or recommendation, or the owner asks to revisit it. Leave unrelated prescriptions unchanged and continue with the new question; do not demand a progress report. When a relevant outcome is supplied, record it:
    ```bash
-   python3 scripts/ledger.py resolve <slug> --index N --status done|tried|dropped --result "what happened, in numbers"
+   python3 <skill>/scripts/ledger.py resolve <slug> --index N --status done|tried|dropped --result "what happened, in numbers"
    ```
 2. **Reuse the saved business context.** `model` holds what is already known. Read relevant business documents the owner identifies before asking for missing or materially changed facts. Follow the short intake in `SKILL.md`; do not repeat the business background or require every model field to be filled.
 3. **Surface drift.** When stated numbers differ materially from `model`, say so and use the newer ones.
@@ -47,7 +48,7 @@ When a ledger opens:
 Once the recommendation is ready, save it before sending the final reply. One call records the run. Use `--model key=value` for useful business facts supported by the owner or identified documents, including newly learned offer or delivery context. Preserve other saved facts; resolve material conflicts before replacing them. Do not store whole documents or unconfirmed assumptions as business facts:
 
 ```bash
-python3 scripts/ledger.py append <slug> \
+python3 <skill>/scripts/ledger.py append <slug> \
   --branch advise --summary "one line" \
   --constraint leads --evidence "what showed it" \
   --action "the one highest-leverage action" --framework "framework applied" \

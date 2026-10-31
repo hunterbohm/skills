@@ -36,7 +36,7 @@ Completion criterion: an Advise or Audit answer has a Direct, Translate, or Over
 
 ## 3. Diagnose the constraint
 
-For **Advise** and **Audit** on a named business (including a fictional demo when the user or workspace has authorized persistent memory), load `references/ledger.md` and open that business's ledger first with `scripts/ledger.py`, subcommand `open <business-slug>`: reuse saved business context and ask only for missing or materially changed facts. Review prior advice for relevance to the current question; ask what happened only when the result could change this answer. Unrelated outstanding advice must not delay the current request.
+For **Advise** and **Audit** on a named business (including a fictional demo when the user or workspace has authorized persistent memory), load `references/ledger.md` and open that business's ledger first with `scripts/ledger.py`, subcommand `open <business-slug>`. Run the helper by its full path, `python3 <skill folder>/scripts/ledger.py`, where the skill folder is the one holding this SKILL.md; a bare `scripts/ledger.py` works only from inside that folder. Then reuse saved business context and ask only for missing or materially changed facts. Review prior advice for relevance to the current question; ask what happened only when the result could change this answer. Unrelated outstanding advice must not delay the current request.
 
 Honor an explicit workspace memory location before consulting global configuration. If memory creation is already authorized, initialize a missing business ledger without asking again. Do not silently skip saving because the business is fictional.
 
