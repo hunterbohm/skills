@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: boat
     timeout-minutes: 10
     env:
       DO_NOT_TRACK: "1"
