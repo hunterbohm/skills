@@ -8,7 +8,7 @@ skills here. Nothing upstream generates them.
 - Package: `skills/<category>/<name>/` — `SKILL.md`, `references/`, `evals/`,
   `LICENSE`. Every package installs on its own, so it must not point outside
   its own directory.
-- `ops-audit/evals/proof-checklist.md` is that skill's proof standard: one real
+- `skills/business/ops-audit/evals/proof-checklist.md` is that skill's proof standard: one real
   run on the owner's own operations. Nothing runs that file automatically.
 - No private names, machine paths, or credentials. Users choose their own
   paths; the skill asks once.

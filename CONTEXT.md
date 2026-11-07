@@ -48,7 +48,7 @@ Terms for the `ops-audit` skill.
 
 ## Workspace
 
-**Workspace**: The folder the owner chose for one business; see `references/workspace-contract.md`.
+**Workspace**: The folder the owner chose for one business; see `skills/business/ops-audit/references/workspace-contract.md`.
 
 **Step status**: A move or automation runs proposed, approved, done. A hold runs holding, ended. Each status carries the owner's words or what was done.
 
