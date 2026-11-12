@@ -1,0 +1,7 @@
+interface:
+  display_name: "Subscription Audit"
+  short_description: "Find, check, and cancel subscriptions with proof"
+  default_prompt: "Use $subscription-audit to find what I pay for each month and show me what I could cancel."
+
+policy:
+  allow_implicit_invocation: true

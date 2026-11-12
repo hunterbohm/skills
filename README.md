@@ -32,6 +32,16 @@ Skills are grouped by the kind of work they help with, not by programming langua
 
 See the complete [catalog, compatibility notes, and direct install commands](docs/catalog.md).
 
+### Subscription audit
+
+Your agent reads your receipts and card statements, checks them against your list, and cancels only what you name, with proof.
+
+![How the subscription audit works](skills/finance/subscription-audit/assets/how-it-works.png)
+
+```bash
+npx skills@latest add hunterbohm/skills --skill subscription-audit --global
+```
+
 The design behind the operations skills is written up for business owners in [the connected-agent field guide](docs/connected-agent-field-guide.md). Design decisions live in [docs/adr](docs/adr), and the shared vocabulary in [CONTEXT.md](CONTEXT.md).
 
 ## Repository layout
@@ -39,6 +49,7 @@ The design behind the operations skills is written up for business owners in [th
 ```text
 skills/
   business/
+  finance/
   project-management/
 docs/
 scripts/
