@@ -25,3 +25,15 @@ Find the owner's time sinks and leverage points from consented evidence and past
 ```bash
 npx skills@latest add hunterbohm/skills --skill ops-audit --global
 ```
+
+## Finance
+
+### [Subscription Audit](../skills/finance/subscription-audit/SKILL.md)
+
+Find every subscription the owner pays for from their email receipts and card statements, check it against their list, and cancel the ones they name, with proof. Use when they ask what they pay for, what they can cancel, to update their subscription list, or to cancel a subscription.
+
+**Compatibility:** Agent Skills-compatible clients
+
+```bash
+npx skills@latest add hunterbohm/skills --skill subscription-audit --global
+```
