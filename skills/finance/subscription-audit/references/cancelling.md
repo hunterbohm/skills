@@ -13,15 +13,18 @@ Do these in order for each item the owner named.
 4. **Check what depends on it.** Data to export, a replacement that must work
    first, other people who use it, sign-ins that go through it. If something
    is not ready, stop and tell the owner what is missing.
-5. **Make the smallest change that stops the charge.** Turn off auto-renew or
-   cancel the plan. Do not delete the account, the data, or the payment
-   method. Refuse offers, pauses and downgrades unless the owner asked for
-   one.
-6. **Sign in without changing the account.** Use the saved login or an
-   emailed sign-in code. Do not reset the password to get in.
-7. **Copy the proof.** The confirmation screen's exact words, the date access
-   ends, and the final amount due. Then find the confirmation email. If no
-   email arrives, reload the account's billing page and copy its status.
+5. **Get in without changing the account.** Try in this order: the saved
+   login, an emailed sign-in code, then a browser the owner is already signed
+   in to, if they offer one. Do not reset the password to get in.
+6. **Make the smallest change that stops the charge.** Try the account's
+   billing page first, then the manage or cancel link in the latest receipt
+   email. Where the plan has no cancel button, turn off auto-renew. Do not
+   delete the account, the data, or the payment method. Refuse offers, pauses
+   and downgrades unless the owner asked for one.
+7. **Copy the proof.** Try in this order and keep all you get: the
+   confirmation screen's exact words with the date access ends and the final
+   amount due, the confirmation email, then the billing page's status after a
+   reload.
 8. **Clean up.** Close the browser session you opened and leave the owner's
    screen as you found it.
 
